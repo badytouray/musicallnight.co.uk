@@ -21,8 +21,13 @@ function ArtistsPage({ data }) {
     <Layout>
       <Container>
         <h1>{frontmatter?.name}</h1>
+        <GatsbyImage
+          image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+          alt={data?.markdownRemark.frontmatter?.name}
+        />
         <p>{frontmatter?.intro}</p>
         <hr />
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {frontmatter.social && (
@@ -46,11 +51,6 @@ function ArtistsPage({ data }) {
             )}
           </>
         )}
-
-        <GatsbyImage
-          image={frontmatter.image?.childImageSharp?.gatsbyImageData}
-          alt={data?.markdownRemark.frontmatter?.name}
-        />
       </Container>
     </Layout>
   )
