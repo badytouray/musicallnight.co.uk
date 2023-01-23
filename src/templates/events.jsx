@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
-import { Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
 
 function EventsTemplate({ data }) {
@@ -19,10 +19,11 @@ function EventsTemplate({ data }) {
         <p>{frontmatter?.date}</p>
         <p>{frontmatter?.venue}</p>
         <p>{frontmatter?.location}</p>
-        <p>{frontmatter?.ticket}</p>
         <hr />
-
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Button as="a" href={frontmatter?.ticket} target="_blank">
+          Buy Tickets
+        </Button>
       </Container>
     </Layout>
   )
