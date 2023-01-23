@@ -14,9 +14,9 @@ function ArtistsPage({ data }) {
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col md={6} lg={4}>
               <ArtistCard
+                image={node.frontmatter.image}
                 name={node.frontmatter.name}
                 intro={node.frontmatter.intro}
-                image={node.frontmatter.image}
                 url={`/artists/${node.parent.name}/`}
               />
             </Col>

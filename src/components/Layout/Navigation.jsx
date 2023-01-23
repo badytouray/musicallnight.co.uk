@@ -25,10 +25,10 @@ export function Navigation() {
             <NavLink to="/about/">About</NavLink>
             <NavLink to="/events/">Events</NavLink>
             <NavLink to="/artists/">Artists</NavLink>
-            <NavDropdown title="Other Stuff" id="navbar-integrations">
+            {/* <NavDropdown title="Other Stuff" id="navbar-integrations">
               <DropdownLink to="/things/">Things</DropdownLink>
               <DropdownLink to="/stuff/">Stuff</DropdownLink>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Form className="d-flex gap-2 my-2 my-lg-0">
             <Button variant="outline-light" as={Link} to="/contact/">
