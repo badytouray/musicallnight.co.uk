@@ -6,6 +6,7 @@ featured: true
 date: 2023-01-01 18:00:00
 venue: The Volks Nightclub
 location: Brighton
+ticket: 'https://www.youtube.com/@freecodecamp/videos'
 ---
 
 ## Some Stuff
