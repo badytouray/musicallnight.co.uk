@@ -29,7 +29,7 @@ module.exports.createPages = async ({ actions, graphql, reporter }) => {
   data?.allMarkdownRemark.edges.forEach(({ node }) =>
     actions.createPage({
       path: `${node.parent.relativeDirectory}/${node.parent.name}`,
-      component: path.resolve(`src/templates/${node.parent.relativeDirectory}.tsx`),
+      component: path.resolve(`src/templates/${node.parent.relativeDirectory}.jsx`),
       context: { id: node.id },
     })
   )
