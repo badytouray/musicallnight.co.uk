@@ -19,6 +19,7 @@ function EventsTemplate({ data }) {
         <p>{frontmatter?.date}</p>
         <p>{frontmatter?.venue}</p>
         <p>{frontmatter?.location}</p>
+        <p>{frontmatter?.ticket}</p>
         <hr />
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -48,6 +49,7 @@ export const pageQuery = graphql`
         date
         venue
         location
+        ticket
       }
     }
   }
