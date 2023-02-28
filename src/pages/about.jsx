@@ -4,6 +4,14 @@ import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import Pic from '../images/artists/harry.png'
 
+ about-page
+function AboutPage() {
+  return (
+    <Layout>
+      <h1>About</h1>
+      <p>Bla bla</p>
+    </Layout>
+    
 function AboutPage({ data }) {
   return (
     <div className="container-fluid">
@@ -117,6 +125,7 @@ function AboutPage({ data }) {
         </div>
       </Layout>
     </div>
+
   )
 }
 
