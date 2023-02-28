@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { Button, Container } from 'react-bootstrap'
+import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 
 function SocialLink({ text, url }) {
@@ -19,10 +19,14 @@ function ArtistsPage({ data }) {
 
   return (
     <Layout>
+      <HeroSection
+        title={frontmatter?.name}
+        image={frontmatter.image?.childImageSharp.gatsbyImageData.images.fallback.src}
+      />
       <Container>
-        <h1>{frontmatter?.name}</h1>
         <p>{frontmatter?.intro}</p>
         <hr />
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {frontmatter.social && (
@@ -46,11 +50,6 @@ function ArtistsPage({ data }) {
             )}
           </>
         )}
-
-        <GatsbyImage
-          image={frontmatter.image?.childImageSharp?.gatsbyImageData}
-          alt={data?.markdownRemark.frontmatter?.name}
-        />
       </Container>
     </Layout>
   )

@@ -1,23 +1,26 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ArtistCard } from '../components/ArtistCard'
+import { EventCard } from '../components/EventCard'
 import { Layout } from '../components/Layout'
 
-function ArtistsPage({ data }) {
+function EventsPage({ data }) {
   return (
     <Layout>
       <Container>
-        <h1>Artists</h1>
-        <p>Some text about artists</p>
+        <h1>Events</h1>
+        <p>Some text about Events</p>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col md={6} lg={4}>
-              <ArtistCard
+              <EventCard
                 image={node.frontmatter.image}
                 name={node.frontmatter.name}
                 intro={node.frontmatter.intro}
-                url={`/artists/${node.parent.name}/`}
+                date={node.frontmatter.date}
+                location={node.frontmatter.location}
+                venue={node.frontmatter.venue}
+                url={`/events/${node.parent.name}/`}
               />
             </Col>
           ))}
@@ -27,21 +30,24 @@ function ArtistsPage({ data }) {
   )
 }
 
-export default ArtistsPage
+export default EventsPage
 
 export function Head() {
-  return <title>Artists</title>
+  return <title>Events</title>
 }
 
 export const pageQuery = graphql`
-  query ArtistsPage {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/artists/*" } }) {
+  query EventsPage {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/events/*" } }) {
       edges {
         node {
           id
           frontmatter {
             name
             intro
+            date
+            location
+            venue
             image {
               childImageSharp {
                 gatsbyImageData(width: 540)
