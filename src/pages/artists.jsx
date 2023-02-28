@@ -2,14 +2,14 @@ import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { ArtistCard } from '../components/ArtistCard'
+import { HeroSection } from '../components/HeroSection/HeroSection'
 import { Layout } from '../components/Layout'
 
 function ArtistsPage({ data }) {
   return (
     <Layout>
       <Container>
-        <h1>Artists</h1>
-        <p>Some text about artists</p>
+        <HeroSection />
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col md={6} lg={4}>
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
             intro
             image {
               childImageSharp {
-                gatsbyImageData(width: 540)
+                gatsbyImageData(width: 540, height: 540)
               }
             }
           }

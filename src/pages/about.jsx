@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
+import { Button, Row } from 'react-bootstrap'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import Pic from '../images/artists/harry.png'
@@ -11,7 +12,7 @@ function AboutPage({ data }) {
         <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
         <h1 className="text-center pt-5">About Us</h1>
         <div className="container">
-          <div className="row align-items-end ">
+          <Row className="align-items-end ">
             <div className="col col-md-4  align-self-start ">
               <img src={Pic} className=" m-10 card-img-top" alt="..." />
               <p className="p-10">
@@ -20,7 +21,9 @@ function AboutPage({ data }) {
               </p>
               <h3>Icon: musicallnight@gmail.com</h3>
               <h3>Tel:: 07533780033</h3>
-              <button className="btn btn-danger">Email Us</button>
+              <Button className="btn btn-danger" href="/contact-us">
+                Contact Us
+              </Button>
             </div>
             <div className="col about-right align-self-end col-lg-8 p-5">
               <h5>Lorem Ipsum is simply dummy text of the printing</h5>
@@ -72,7 +75,7 @@ function AboutPage({ data }) {
               </p>
               {/* end of about decription */}
             </div>
-          </div>
+          </Row>
         </div>
         {/* start of team images */}
         <div className="container text-center">

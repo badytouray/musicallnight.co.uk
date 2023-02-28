@@ -17,7 +17,7 @@ function IndexPage({ data }) {
           <Button as={Link} to="/contact" variant="primary" size="lg">
             CONTACT US NOW
           </Button>
-          <Button variant="primary" size="lg" onClick={console.log('hey')}>
+          <Button variant="primary" size="lg" onClick="hey">
             WATCH TRAILER <i className="far fa-play-circle" />
           </Button>
         </HeroSection>
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
             intro
             image {
               childImageSharp {
-                gatsbyImageData(width: 540)
+                gatsbyImageData(width: 540, height: 540)
               }
             }
           }
