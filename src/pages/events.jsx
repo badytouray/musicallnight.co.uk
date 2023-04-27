@@ -17,9 +17,9 @@ function EventsPage({ data }) {
                 image={node.frontmatter.image}
                 name={node.frontmatter.name}
                 intro={node.frontmatter.intro}
-                date={node.frontmatter.date}
-                location={node.frontmatter.location}
-                venue={node.frontmatter.venue}
+                // date={node.frontmatter.date}
+                // location={node.frontmatter.location}
+                // venue={node.frontmatter.venue}
                 url={`/events/${node.parent.name}/`}
               />
             </Col>
