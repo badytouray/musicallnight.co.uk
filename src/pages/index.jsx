@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { ArtistCard } from '../components/ArtistCard'
+import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 
@@ -36,6 +37,21 @@ function IndexPage({ data }) {
                     intro={node.frontmatter.intro}
                     image={node.frontmatter.image}
                     url={`/artists/${node.parent.name}/`}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
+          <div className="text-center my-5">
+            <h2>Featured events</h2>
+            <Row>
+              {data.events.edges.map(({ node }) => (
+                <Col md={6} lg={4}>
+                  <EventCard
+                    name={node.frontmatter.name}
+                    intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/events/${node.parent.name}/`}
                   />
                 </Col>
               ))}
