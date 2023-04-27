@@ -1,15 +1,15 @@
 ---
-name: DJ Machanix
-intro: Bla bla bla.
+name: Bring Your USB
+intro: Bank holiday 7th May special
 image: ../../images/artists/dj-bady.png
 featured: true
-date: 2023-01-01 18:00:00
-venue: The Volks Nightclub
-location: Brighton
-ticket: 'https://www.youtube.com/@freecodecamp/videos'
+date: When - 2023-01-01 18:00:00
+venue: Venue - The Volks Nightclub
+location: Location - Brighton
+ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
 ---
 
-## Some Stuff
+## What to expect??
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ipsum pellentesque, suscipit
 ligula at, tristique dui. Curabitur aliquet dui ac lectus malesuada, sit amet tempus libero mollis.
@@ -18,7 +18,7 @@ ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius
 et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum sollicitudin dolor eget
 facilisis.
 
-## More Stuff
+## The line up
 
 In tempus, urna quis feugiat tincidunt, nibh orci iaculis metus, vitae blandit lectus massa ut
 felis. Pellentesque quis pretium nunc. Donec egestas tortor leo. Praesent feugiat nunc sit amet odio
@@ -29,14 +29,24 @@ sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pret
 Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
 vestibulum mattis. Nulla et auctor massa.
 
-### Even More Stuff
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
-Vivamus quis nulla ac dolor laoreet commodo. Suspendisse potenti. Vestibulum ut lorem sed nulla
-faucibus eleifend. Nulla ut purus metus. Maecenas laoreet viverra nisl, sit amet ornare tellus
-euismod non. Praesent a mattis justo. Nam dictum purus ac nisl pellentesque, non tincidunt nibh
-aliquam. Ut commodo neque vel porta convallis. Etiam et ante mollis, vehicula ipsum id, semper
-magna. Fusce dictum ac tortor cursus pretium. In nibh erat, maximus quis nisi a, semper dapibus
-urna. Sed imperdiet arcu non imperdiet commodo. Donec finibus gravida nisl, in egestas elit commodo
-eu. Vestibulum fringilla, dui vitae venenatis laoreet, magna sapien rutrum tortor, nec posuere leo
-sem id velit. Praesent ut sagittis nulla, eu auctor eros. Aliquam dictum neque nec ipsum molestie
-luctus.
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
+
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
+
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/watch?v=8pDqJVdNa44&t=4s"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+## Register to play at this event
+
+Register by emailing us to play at this event, please contact us first before attending with you USB
+stick as there are limited spaces available

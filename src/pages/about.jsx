@@ -14,49 +14,32 @@ function AboutPage({ data }) {
           <div className="row align-items-end ">
             <div className="col col-md-4  align-self-start ">
               <img src={Pic} className=" m-10 card-img-top" alt="..." />
-              <p className="p-10">
-                More info? Mail us! For questions, fees, availability and bookings feel free to
-                contact us via:
-              </p>
+              <p className="p-10">More info? Mail us! For questions contact us via:</p>
               <h3>Icon: musicallnight@gmail.com</h3>
-              <h3>Tel:: 07533780033</h3>
-              <button className="btn btn-danger">Email Us</button>
+              <h3>Tel: 07533780033</h3>
+              {/* <button className="btn btn-danger">Email Us</button> */}
             </div>
             <div className="col about-right align-self-end col-lg-8 p-5">
-              <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+              <h5>Who are we?</h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.
+                Welcome to the Music Events Platform, created in 2021 to provide opportunities for
+                upcoming South coast local talent. Our mission is to provide networking events with
+                affordable tickets so everyone has access to the events. Our first event was held at
+                the legendary Volks Nightclub in Brighton. We also promote upcoming events and
+                follow the rise of upcoming DJs and local Brighton MCs.
               </p>
               <br />
-              <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+              <h5>Previous events</h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.
+                Previous events have included Drum and Bass King Harry Shotta, Garage Queen and So
+                Solid Members Lisa Maffia and Romeo, DJ Pied Piper and more. We look forward to
+                continuing to provide amazing events and opportunities for Brighton's local talent.
               </p>
               <br />
-              <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+              <h5>Are you an Artist or DJ</h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.
+                If you struggling to get yourself out there or you simplify do not know where to
+                turn or how to get started then look no further, we are always scouting fresh talent
               </p>
               <br />
               <h5>Lorem Ipsum is simply dummy text of the printing</h5>

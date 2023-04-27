@@ -28,21 +28,6 @@ function IndexPage({ data }) {
             <p className="lead">We do cool stuff</p>
           </div>
           <div className="text-center my-5">
-            <h2>Featured artists</h2>
-            <Row>
-              {data.artists.edges.map(({ node }) => (
-                <Col md={6} lg={4}>
-                  <ArtistCard
-                    name={node.frontmatter.name}
-                    intro={node.frontmatter.intro}
-                    image={node.frontmatter.image}
-                    url={`/artists/${node.parent.name}/`}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </div>
-          <div className="text-center my-5">
             <h2>Featured events</h2>
             <Row>
               {data.events.edges.map(({ node }) => (
@@ -52,6 +37,21 @@ function IndexPage({ data }) {
                     intro={node.frontmatter.intro}
                     image={node.frontmatter.image}
                     url={`/events/${node.parent.name}/`}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
+          <div className="text-center my-5">
+            <h2>Featured artists</h2>
+            <Row>
+              {data.artists.edges.map(({ node }) => (
+                <Col md={6} lg={4}>
+                  <ArtistCard
+                    name={node.frontmatter.name}
+                    intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/artists/${node.parent.name}/`}
                   />
                 </Col>
               ))}
@@ -87,6 +87,30 @@ export const pageQuery = graphql`
         fileAbsolutePath: { glob: "**/artists/*" }
         frontmatter: { featured: { eq: true } }
       }
+      limit: 3
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            intro
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 540)
+              }
+            }
+          }
+          parent {
+            ... on File {
+              name
+            }
+          }
+        }
+      }
+    }
+    events: allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/events/*" }, frontmatter: { featured: { eq: true } } }
       limit: 3
     ) {
       edges {
