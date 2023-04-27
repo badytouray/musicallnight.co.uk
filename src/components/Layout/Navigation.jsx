@@ -7,7 +7,7 @@ import {
   Form,
   Nav,
   Navbar,
-  NavDropdown,
+  // NavDropdown,
   NavItem,
 } from 'react-bootstrap'
 
@@ -51,10 +51,10 @@ function NavLink({ children, ...props }) {
   )
 }
 
-function DropdownLink({ children, ...props }) {
-  return (
-    <NavDropdown.Item as={Link} activeClassName="active" partiallyActive {...props}>
-      {children}
-    </NavDropdown.Item>
-  )
-}
+// function DropdownLink({ children, ...props }) {
+//   return (
+//     <NavDropdown.Item as={Link} activeClassName="active" partiallyActive {...props}>
+//       {children}
+//     </NavDropdown.Item>
+//   )
+// }
