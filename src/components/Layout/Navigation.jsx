@@ -23,8 +23,9 @@ export function Navigation() {
           <Nav as="ul" className="ms-auto">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>
+            <NavLink to="/news/">News</NavLink>
             <NavLink to="/events/">Events</NavLink>
-            <NavLink to="/artists/">Artists</NavLink>
+            {/* <NavLink to="/artists/">Artists</NavLink> */}
             {/* <NavDropdown title="Other Stuff" id="navbar-integrations">
               <DropdownLink to="/things/">Things</DropdownLink>
               <DropdownLink to="/stuff/">Stuff</DropdownLink>

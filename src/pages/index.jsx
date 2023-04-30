@@ -1,10 +1,11 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import { ArtistCard } from '../components/ArtistCard'
+// import { ArtistCard } from '../components/ArtistCard'
 import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
+import { NewsCard } from '../components/NewsCard'
 
 function IndexPage({ data }) {
   return (
@@ -45,7 +46,23 @@ function IndexPage({ data }) {
               ))}
             </Row>
           </div>
-          <div className="text-center my-5">
+          <div className="text-center my-5 " style={{ width: '100%' }}>
+            <h2>News</h2>
+            <Row>
+              {data.news.edges.map(({ node }) => (
+                <Col md={6} lg={4}>
+                  <NewsCard
+                    name={node.frontmatter.name}
+                    intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/news/${node.parent.name}/`}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
+
+          {/* <div className="text-center my-5">
             <h2>Featured artists</h2>
             <Row>
               {data.artists.edges.map(({ node }) => (
@@ -59,7 +76,7 @@ function IndexPage({ data }) {
                 </Col>
               ))}
             </Row>
-          </div>
+          </div> */}
         </Container>
       </>
     </Layout>
@@ -85,11 +102,8 @@ export const pageQuery = graphql`
         )
       }
     }
-    artists: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { glob: "**/artists/*" }
-        frontmatter: { featured: { eq: true } }
-      }
+    news: allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/news/*" }, frontmatter: { featured: { eq: true } } }
       limit: 3
     ) {
       edges {
