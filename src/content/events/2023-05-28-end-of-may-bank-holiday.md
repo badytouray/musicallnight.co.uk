@@ -49,4 +49,4 @@ vestibulum mattis. Nulla et auctor massa.
 ## Register to play at this event
 
 Register by emailing us to play at this event, please contact us first before attending with you USB
-stick as there are limited spaces available
+stick as there are limited spaces available. Contact Us TODAY!

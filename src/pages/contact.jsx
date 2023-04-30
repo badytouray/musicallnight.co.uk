@@ -1,26 +1,31 @@
 import React from 'react'
-import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
+import Pic from '../images/artists/dj-bady.png'
 
 function Contact() {
   return (
     <Layout>
-      <Container fluid className="d-flex align-items-center align-self-center">
-        <Row className="justify-content-center">
-          <Col md="6">
-            <Card className="p-3">
-              <h1 className="text-center">Contact us</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has
-              </p>
-              <p>Email: info@musicallnight.co.uk</p>
-              <p className="h5">Tel: +44 7533 7800 33</p>
-              <Button>Send email</Button>
-            </Card>
+      <Container
+        classname="m-3 justify-content-center "
+        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      >
+        <Row>
+          {/* <Card className="bg-white"> */}
+          <Col
+            lg={12}
+            className="m-3 justify-content-center"
+            style={{ width: 'auto', height: 'auto' }}
+          >
+            <h1 className="text-center m-3">Contact us</h1>
+            <p className="text-center">Contact us at info@musicallnight.co.uk</p>
+            <img
+              src={Pic}
+              alt="contact-music-all-night"
+              style={{ height: '800px', width: '800px' }}
+            />
           </Col>
+          {/* </Card> */}
         </Row>
       </Container>
     </Layout>
@@ -28,3 +33,33 @@ function Contact() {
 }
 
 export default Contact
+
+export function Head() {
+  return <title>Contact Us</title>
+}
+
+export const pageQuery = graphql`
+  query ArtistsPage {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/artists/*" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            intro
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 540)
+              }
+            }
+          }
+          parent {
+            ... on File {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+`

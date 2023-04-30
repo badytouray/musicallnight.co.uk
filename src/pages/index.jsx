@@ -25,7 +25,10 @@ function IndexPage({ data }) {
         <Container>
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
-            <p className="lead">We do cool stuff</p>
+            <p className="lead">
+              Welcome to the Music All Night Events Platform, created in 2021 to provide
+              opportunities for upcoming South coast local talent.{' '}
+            </p>
           </div>
           <div className="text-center my-5">
             <h2>Featured events</h2>
@@ -33,8 +36,8 @@ function IndexPage({ data }) {
               {data.events.edges.map(({ node }) => (
                 <Col md={6} lg={4}>
                   <EventCard
-                    name={node.frontmatter.name}
-                    intro={node.frontmatter.intro}
+                    // name={node.frontmatter.name}
+                    // intro={node.frontmatter.intro}
                     image={node.frontmatter.image}
                     url={`/events/${node.parent.name}/`}
                   />
