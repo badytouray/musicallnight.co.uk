@@ -1,29 +1,49 @@
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import * as React from 'react'
-import { Button, Container } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
 
 function EventsTemplate({ data }) {
   const { frontmatter, html } = data.markdownRemark
 
+  const [showTickets, setShowTickets] = useState(false)
+
+  ;<script src="" />
+
   return (
     <Layout>
-      <Container>
-        <h1>{frontmatter?.name}</h1>
-        <GatsbyImage
-          image={frontmatter.image?.childImageSharp?.gatsbyImageData}
-          alt={data?.markdownRemark.frontmatter?.name}
-        />
-        <p>{frontmatter?.intro}</p>
-        <p>{frontmatter?.date}</p>
-        <p>{frontmatter?.venue}</p>
-        <p>{frontmatter?.location}</p>
-        <hr />
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-        <Button as="a" href={frontmatter?.ticket} target="_blank">
-          Buy Tickets
-        </Button>
+      <Container className="m-3 p-3 align-contents-center">
+        <Row>
+          <Col sm={12} md={6} lg={6}>
+            <h1>{frontmatter?.name}</h1>
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+            />
+          </Col>
+          <Col sm={12} md={6} lg={6}>
+            <p>{frontmatter?.intro}</p>
+            <p>{frontmatter?.date}</p>
+            <p>{frontmatter?.venue}</p>
+            <p>{frontmatter?.location}</p>
+            <div className="text-left">
+              <p>Tickets from £8</p>
+              <Button
+                className="btn-right"
+                size="lg"
+                as="a"
+                // href={frontmatter?.ticket}
+                // target="_blank"
+                href="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
+              >
+                Buy Tickets
+              </Button>
+            </div>
+            <hr />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )

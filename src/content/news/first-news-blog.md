@@ -1,13 +1,12 @@
 ---
-name: Bring Your USB
+name: First news blog
 intro: Bank holiday 28th May special
 image: ../../images/artists/dj-bady.png
 featured: true
 date: When - 2023-01-01 18:00:00
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
-ticket: 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
-
+ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
 ---
 
 ## What to expect??
@@ -30,9 +29,19 @@ sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pret
 Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
 vestibulum mattis. Nulla et auctor massa.
 
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
-
-Register by emailing us to play at this event, please contact us first before attending with you USB
-stick as there are limited spaces available
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/watch?v=8pDqJVdNa44&t=4s"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
