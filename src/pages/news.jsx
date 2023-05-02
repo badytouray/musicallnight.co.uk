@@ -1,9 +1,9 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import { ArtistCard } from '../components/ArtistCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
+import { NewsCard } from '../components/NewsCard'
 
 function NewsPage({ data }) {
   return (
@@ -26,7 +26,7 @@ function NewsPage({ data }) {
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col md={6} lg={4}>
-              <ArtistCard
+              <NewsCard
                 image={node.frontmatter.image}
                 name={node.frontmatter.name}
                 intro={node.frontmatter.intro}
@@ -51,12 +51,7 @@ export const pageQuery = graphql`
     heroImage: file(relativePath: { eq: "artists/harry.png" }) {
       relativePath
       childImageSharp {
-        gatsbyImageData(
-          transformOptions: { cropFocus: NORTH }
-          width: 1920
-          height: 400
-          layout: CONSTRAINED
-        )
+        gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)
       }
     }
     allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/news/*" } }) {
