@@ -28,9 +28,10 @@ function NewsPage({ data }) {
             <Col md={6} lg={4}>
               <NewsCard
                 image={node.frontmatter.image}
-                name={node.frontmatter.name}
-                intro={node.frontmatter.intro}
-                url={`/news/${node.parent.name}/`}
+                // name={node.frontmatter.name}
+                // intro={node.frontmatter.intro}
+                url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
+                // url={`/news/${node.parent.name}/`}
               />
             </Col>
           ))}
