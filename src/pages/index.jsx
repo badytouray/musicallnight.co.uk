@@ -3,6 +3,7 @@ import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 // import { ArtistCard } from '../components/ArtistCard'
 import { ArtistSection } from '../components/ArtistSection'
+
 import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
@@ -76,6 +77,21 @@ function IndexPage({ data }) {
                     intro={node.frontmatter.intro}
                     image={node.frontmatter.image}
                     url={`/news/${node.parent.name}/`}
+        <Container>
+          <div className="text-center my-5">
+            <h1>Welcome to M.A.N</h1>
+            <p className="lead">We do cool stuff</p>
+          </div>
+          <div className="text-center my-5">
+            <h2>Featured events</h2>
+            <Row>
+              {data.events.edges.map(({ node }) => (
+                <Col md={6} lg={4}>
+                  <EventCard
+                    name={node.frontmatter.name}
+                    intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/events/${node.parent.name}/`}
                   />
                 </Col>
               ))}
@@ -83,6 +99,8 @@ function IndexPage({ data }) {
           </div> */}
 
         {/* <div className="text-center my-5">
+          </div>
+          <div className="text-center my-5">
             <h2>Featured artists</h2>
             <Row>
               {data.artists.edges.map(({ node }) => (
@@ -98,6 +116,23 @@ function IndexPage({ data }) {
             </Row>
           </div> */}
         {/* </Container> */}
+          </div>
+          <div className="text-center my-5">
+            <h2>Featured events</h2>
+            <Row>
+              {data.events.edges.map(({ node }) => (
+                <Col md={6} lg={4}>
+                  <EventCard
+                    name={node.frontmatter.name}
+                    intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/events/${node.parent.name}/`}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
+        </Container>
       </>
     </Layout>
   )
@@ -135,6 +170,30 @@ export const pageQuery = graphql`
       }
     }
 
+    events: allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/events/*" }, frontmatter: { featured: { eq: true } } }
+      limit: 3
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            intro
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 540)
+              }
+            }
+          }
+          parent {
+            ... on File {
+              name
+            }
+          }
+        }
+      }
+    }
     events: allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/events/*" }, frontmatter: { featured: { eq: true } } }
       limit: 3
