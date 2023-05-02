@@ -48,9 +48,8 @@ function IndexPage({ data }) {
             ))}
           </Row>
         </div>
-        <div className="text-center my-5">
+        <div>
           <Row>
-            <h2>Latest news</h2>
             <NewsSection
               image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
               // title="Latest news"
