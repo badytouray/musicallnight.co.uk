@@ -32,6 +32,8 @@ function NewsPage({ data }) {
                 // intro={node.frontmatter.intro}
                 // url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
                 url={`/news/${node.parent.name}/`}
+                url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
+                // url={`/news/${node.parent.name}/`}
               />
             </Col>
           ))}
