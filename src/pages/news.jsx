@@ -11,21 +11,19 @@ function NewsPage({ data }) {
       <HeroSection
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
-        subtitle="Read some stuff about some stuff"
+        // subtitle="Read some stuff about some stuff"
       >
         {/* <Button as={Link} to="/contact" variant="primary" size="lg">
           Read now
         </Button> */}
-        <Button variant="primary" size="lg" onClick={console.log('hey')}>
+        {/* <Button variant="primary" size="lg" onClick={console.log('hey')}>
           WATCH TRAILER <i className="far fa-play-circle" />
-        </Button>
+        </Button> */}
       </HeroSection>
-      <Container>
-        <h1>News</h1>
-        <p>Some text about News</p>
+      <Container className="text-center m-3">
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col md={6} lg={4}>
+            <Col md={6} lg={5}>
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
@@ -35,6 +33,16 @@ function NewsPage({ data }) {
               />
             </Col>
           ))}
+          <Col md={6} lg={7}>
+            <p className="fs-2">
+              lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
+              for upcoming South coast local talent. Our mission is to provide networking events
+              with affordable tickets so everyone has access to the events. Our first event was held
+              at the legendary Volks Nightclub in Brighton. We also promote upcoming events and
+              follow the rise of upcoming DJs and local Brighton MCs.
+            </p>
+            <small>3min read</small>
+          </Col>
         </Row>
       </Container>
     </Layout>
