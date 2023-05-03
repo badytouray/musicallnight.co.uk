@@ -77,6 +77,7 @@ function IndexPage({ data }) {
                     intro={node.frontmatter.intro}
                     image={node.frontmatter.image}
                     url={`/news/${node.parent.name}/`}
+
         <Container>
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
@@ -99,6 +100,7 @@ function IndexPage({ data }) {
           </div> */}
 
         {/* <div className="text-center my-5">
+
           </div>
           <div className="text-center my-5">
             <h2>Featured artists</h2>
@@ -116,6 +118,7 @@ function IndexPage({ data }) {
             </Row>
           </div> */}
         {/* </Container> */}
+
 
           </div>
           <div className="text-center my-5">
@@ -170,6 +173,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
       }
     }
+
 
       }
     }

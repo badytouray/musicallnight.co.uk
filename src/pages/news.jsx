@@ -11,32 +11,38 @@ function NewsPage({ data }) {
       <HeroSection
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
-        subtitle="Read some stuff about some stuff"
+        // subtitle="Read some stuff about some stuff"
+
       >
         {/* <Button as={Link} to="/contact" variant="primary" size="lg">
           Read now
         </Button> */}
-        <Button variant="primary" size="lg" onClick={console.log('hey')}>
+        {/* <Button variant="primary" size="lg" onClick={console.log('hey')}>
           WATCH TRAILER <i className="far fa-play-circle" />
-        </Button>
+        </Button> */}
       </HeroSection>
-      <Container>
-        <h1>News</h1>
-        <p>Some text about News</p>
+      <Container className="text-center m-3">
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col md={6} lg={4}>
+            <Col md={6} lg={5}>
+
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
                 // intro={node.frontmatter.intro}
                 // url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
                 url={`/news/${node.parent.name}/`}
-                url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
-                // url={`/news/${node.parent.name}/`}
               />
             </Col>
           ))}
+          <Col md={6} lg={7}>
+            <p className="fs-2 align-self-center mt-3">
+              lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
+              for upcoming South coast local talent. .
+            </p>
+            <small>3min read</small>
+          </Col>
+
         </Row>
       </Container>
     </Layout>

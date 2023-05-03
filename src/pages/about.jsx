@@ -1,62 +1,87 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { BsFacebook, BsTelephoneInboundFill } from 'react-icons/bs'
+import { RiInstagramFill } from 'react-icons/ri'
+import { TfiEmail } from 'react-icons/tfi'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import Pic from '../images/artists/harry.png'
 
 function AboutPage({ data }) {
   return (
-    <div className="container-fluid">
-      <Layout>
-        <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
-        <h1 className="text-center pt-5">About Us</h1>
-        <div className="container">
-          <div className="row align-items-end ">
-            <div className="col col-md-4  align-self-start ">
-              <img src={Pic} className=" m-10 card-img-top" alt="..." />
-              <p className="p-10">More info? Mail us! For questions contact us via:</p>
-              <h3>Icon: musicallnight@gmail.com</h3>
-              <h3>Tel: 07533780033</h3>
-              {/* <button className="btn btn-danger">Email Us</button> */}
+    <Layout>
+      <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
+      <Container>
+        <Row>
+          <Col>
+            <h1 className="text-center pt-5">About Us</h1>
+            <div className="container">
+              <div className="row align-items-end ">
+                <div className="col col-md-4  align-self-start ">
+                  <img src={Pic} className=" m-10 card-img-top" alt="..." />
+                  <div className="contact-info">
+                    <h5>
+                      <TfiEmail size="1.5em" color="" className="m-3" />
+                      <a
+                        href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="m-2 p-2"
+                      >
+                        <RiInstagramFill size="1.5em" color="instagram" />
+                      </a>
+                      <a
+                        href="https://www.youtube.com/results?search_query=gatsby+query"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="m-2 p-2"
+                      >
+                        <BsFacebook size="1.5em" />
+                      </a>
+                      <BsTelephoneInboundFill className="m-3 fs-4" />
+                      075 3378 0033
+                    </h5>
+                  </div>
+                  {/* <button className="btn btn-danger">Email Us</button> */}
+                </div>
+                <div className="col about-right align-self-end col-lg-8 p-5">
+                  <h5>Who are we?</h5>
+                  <p>
+                    Welcome to the Music Events Platform, created in 2021 to provide opportunities
+                    for upcoming South coast local talent. Our mission is to provide networking
+                    events with affordable tickets so everyone has access to the events. Our first
+                    event was held at the legendary Volks Nightclub in Brighton. We also promote
+                    upcoming events and follow the rise of upcoming DJs and local Brighton MCs.
+                  </p>
+                  <br />
+                  <h5>Previous events</h5>
+                  <p>
+                    Previous events have included Drum and Bass King Harry Shotta, Garage Queen and
+                    So Solid Members Lisa Maffia and Romeo, DJ Pied Piper and more. We look forward
+                    to continuing to provide amazing events and opportunities for Brighton's local
+                    talent.
+                  </p>
+                  <br />
+                  <h5>Are you an Artist or DJ</h5>
+                  <p>
+                    If you struggling to get yourself out there or you simplify do not know where to
+                    turn or how to get started then look no further, we are always scouting fresh
+                    talent
+                  </p>
+                  <br />
+                  <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                  {/* end of about decription */}
+                </div>
+              </div>
+
             </div>
-            <div className="col about-right align-self-end col-lg-8 p-5">
-              <h5>Who are we?</h5>
-              <p>
-                Welcome to the Music Events Platform, created in 2021 to provide opportunities for
-                upcoming South coast local talent. Our mission is to provide networking events with
-                affordable tickets so everyone has access to the events. Our first event was held at
-                the legendary Volks Nightclub in Brighton. We also promote upcoming events and
-                follow the rise of upcoming DJs and local Brighton MCs.
-              </p>
-              <br />
-              <h5>Previous events</h5>
-              <p>
-                Previous events have included Drum and Bass King Harry Shotta, Garage Queen and So
-                Solid Members Lisa Maffia and Romeo, DJ Pied Piper and more. We look forward to
-                continuing to provide amazing events and opportunities for Brighton's local talent.
-              </p>
-              <br />
-              <h5>Are you an Artist or DJ</h5>
-              <p>
-                If you struggling to get yourself out there or you simplify do not know where to
-                turn or how to get started then look no further, we are always scouting fresh talent
-              </p>
-              <br />
-              <h5>Lorem Ipsum is simply dummy text of the printing</h5>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-              {/* end of about decription */}
-            </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
         {/* start of team images */}
         <div className="container text-center">
           <div className="row align-items-end">
@@ -64,42 +89,86 @@ function AboutPage({ data }) {
               <div className="card " style={{ width: '100%' }}>
                 <img src={Pic} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title ">Team Name</h5>
+                  <h5 className="card-title ">Bobbie Tee</h5>
                   <div>
                     <a
                       href="https://www.youtube.com/results?search_query=gatsby+query"
                       target="_blank"
                       rel="noreferrer"
+                      className="m-2 p-2"
                     >
-                      Instagram
-                      <i className="bi-alarm" />
+                      <RiInstagramFill size="2em" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <BsFacebook size="2em" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="col col-md-4">
               <div className="card " style={{ width: '100%' }}>
                 <img src={Pic} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title ">Team Name</h5>
-                  <p className="mb-0">Follow Instagram</p>
+                  <h5 className="card-title ">James</h5>
+                  <div>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <RiInstagramFill size="2em" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <BsFacebook size="2em" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div className="col col-md-4">
               <div className="card " style={{ width: '100%' }}>
                 <img src={Pic} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title ">Team Name</h5>
-                  <p className="mb-0">Follow Instagram</p>
+                  <h5 className="card-title ">Bady</h5>
+                  <div>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <RiInstagramFill size="2em" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <BsFacebook size="2em" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </Layout>
-    </div>
+      </Container>
+    </Layout>
   )
 }
 

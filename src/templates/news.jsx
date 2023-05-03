@@ -1,7 +1,8 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Button, Container } from 'react-bootstrap'
-import { HeroSection } from '../components/HeroSection'
+import { Button, Col, Container, Row } from 'react-bootstrap'
+// import { HeroSection } from '../components/HeroSection'
+
 import { Layout } from '../components/Layout'
 
 function SocialLink({ text, url }) {
@@ -19,37 +20,42 @@ function NewsPage({ data }) {
 
   return (
     <Layout>
-      <HeroSection
+      {/* <HeroSection
         title={frontmatter?.name}
         image={frontmatter.image?.childImageSharp.gatsbyImageData.images.fallback.src}
-      />
-      <Container>
-        <p>{frontmatter?.intro}</p>
-        <hr />
+      /> */}
+      <Container className="text-center" style={{ Width: '400px' }}>
+        <Row>
+          <Col>
+            <p>{frontmatter?.intro}</p>
+            <hr />
 
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        {frontmatter.social && (
-          <>
-            <h2>Social Links</h2>
             {frontmatter.social && (
               <>
-                {frontmatter.social.facebook && (
-                  <SocialLink text="Facebook" url={frontmatter.social.facebook} />
-                )}
-                {frontmatter.social.instagram && (
-                  <SocialLink text="Instagram" url={frontmatter.social.instagram} />
-                )}
-                {frontmatter.social.twitter && (
-                  <SocialLink text="Twitter" url={frontmatter.social.twitter} />
-                )}
-                {frontmatter.social.youtube && (
-                  <SocialLink text="YouTube" url={frontmatter.social.youtube} />
+                <h2>Social Links</h2>
+                {frontmatter.social && (
+                  <>
+                    {frontmatter.social.facebook && (
+                      <SocialLink text="Facebook" url={frontmatter.social.facebook} />
+                    )}
+                    {frontmatter.social.instagram && (
+                      <SocialLink text="Instagram" url={frontmatter.social.instagram} />
+                    )}
+                    {frontmatter.social.twitter && (
+                      <SocialLink text="Twitter" url={frontmatter.social.twitter} />
+                    )}
+                    {frontmatter.social.youtube && (
+                      <SocialLink text="YouTube" url={frontmatter.social.youtube} />
+                    )}
+                  </>
                 )}
               </>
             )}
-          </>
-        )}
+          </Col>
+        </Row>
+
       </Container>
     </Layout>
   )
