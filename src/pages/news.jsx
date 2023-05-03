@@ -12,6 +12,7 @@ function NewsPage({ data }) {
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
         // subtitle="Read some stuff about some stuff"
+
       >
         {/* <Button as={Link} to="/contact" variant="primary" size="lg">
           Read now
@@ -24,6 +25,7 @@ function NewsPage({ data }) {
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col md={6} lg={5}>
+
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
@@ -40,6 +42,7 @@ function NewsPage({ data }) {
             </p>
             <small>3min read</small>
           </Col>
+
         </Row>
       </Container>
     </Layout>

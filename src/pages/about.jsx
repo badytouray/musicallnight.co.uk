@@ -78,6 +78,7 @@ function AboutPage({ data }) {
                   {/* end of about decription */}
                 </div>
               </div>
+
             </div>
           </Col>
         </Row>

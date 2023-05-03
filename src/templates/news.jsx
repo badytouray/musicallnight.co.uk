@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 // import { HeroSection } from '../components/HeroSection'
+
 import { Layout } from '../components/Layout'
 
 function SocialLink({ text, url }) {
@@ -54,6 +55,7 @@ function NewsPage({ data }) {
             )}
           </Col>
         </Row>
+
       </Container>
     </Layout>
   )
@@ -67,6 +69,7 @@ export function Head({ data }) {
 
 export const pageQuery = graphql`
   query NewsPage($id: String!) {
+
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
