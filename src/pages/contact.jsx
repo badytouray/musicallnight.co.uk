@@ -8,16 +8,23 @@ function Contact() {
     <Layout>
       <Container
         classname="m-3 justify-content-center "
+
+        // style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      >
+        <Row>
+
         style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
           {/* <Card className="bg-white"> */}
+
           <Col
             lg={12}
             className="m-3 justify-content-center"
             style={{ width: 'auto', height: 'auto' }}
           >
             <h1 className="text-center m-3">Contact us</h1>
+            <p className="text-center fs-3">Contact us at info@musicallnight.co.uk</p>
             <p className="text-center">Contact us at info@musicallnight.co.uk</p>
             <img
               src={Pic}

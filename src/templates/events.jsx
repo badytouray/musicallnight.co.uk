@@ -1,8 +1,10 @@
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
+
 import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
+import TicketComponent from '../components/TicketComponent/TicketComponent'
 
 function EventsTemplate({ data }) {
   const { frontmatter, html } = data.markdownRemark
@@ -13,6 +15,7 @@ function EventsTemplate({ data }) {
 
   return (
     <Layout>
+
       <Container className="m-3 p-3 align-contents-center">
         <Row>
           <Col sm={12} md={6} lg={6}>
@@ -22,12 +25,13 @@ function EventsTemplate({ data }) {
               alt={data?.markdownRemark.frontmatter?.name}
             />
           </Col>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
           <Col sm={12} md={6} lg={6}>
             <p>{frontmatter?.intro}</p>
             <p>{frontmatter?.date}</p>
             <p>{frontmatter?.venue}</p>
             <p>{frontmatter?.location}</p>
-            <div className="text-left">
+
               <p>Tickets from £8</p>
               <Button
                 className="btn-right"
@@ -39,6 +43,19 @@ function EventsTemplate({ data }) {
               >
                 Buy Tickets
               </Button>
+            </div> */}
+            <Col className="m-3" xs={12} sm={12} md={6} lg={8}>
+              <TicketComponent />
+            </Col>
+
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </Col>
+        </Row>
+        {/* <Row>
+          <Col>
+            <h3>Other events</h3>
+          </Col>
+        </Row> */}
             </div>
             <hr />
             <div dangerouslySetInnerHTML={{ __html: html }} />

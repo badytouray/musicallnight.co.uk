@@ -116,6 +116,7 @@ function IndexPage({ data }) {
             </Row>
           </div> */}
         {/* </Container> */}
+
           </div>
           <div className="text-center my-5">
             <h2>Featured events</h2>
@@ -161,6 +162,15 @@ export const pageQuery = graphql`
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
+      }
+    }
+    artist: file(relativePath: { eq: "artists/harry.png" }) {
+      relativePath
+      childImageSharp {
+        gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
+      }
+    }
+
       }
     }
     artist: file(relativePath: { eq: "artists/harry.png" }) {

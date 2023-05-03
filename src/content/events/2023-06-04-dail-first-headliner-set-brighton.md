@@ -19,3 +19,10 @@ et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum sollicitud
 facilisis.
 
 
+## Register to play at this event
+
+Register by emailing us to play at this event, please contact us first before attending with you USB
+stick as there are limited spaces available
+
+
+
