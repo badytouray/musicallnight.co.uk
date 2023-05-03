@@ -62,7 +62,7 @@ export function Head({ data }) {
 }
 
 export const pageQuery = graphql`
-  query ArtistsPage($id: String!) {
+  query NewsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
