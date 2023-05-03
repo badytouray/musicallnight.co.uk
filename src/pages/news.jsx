@@ -20,10 +20,10 @@ function NewsPage({ data }) {
           WATCH TRAILER <i className="far fa-play-circle" />
         </Button> */}
       </HeroSection>
-      <Container className="text-center m-3" style={{ height: '500px', width: '800px' }}>
+      <Container className="text-center m-3 p-3 mb-3">
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col md={6} lg={6}>
+            <Col sm={12} md={3} lg={6} className="p-3 mb-3">
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}

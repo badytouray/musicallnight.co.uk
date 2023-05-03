@@ -17,6 +17,7 @@ function EventsTemplate({ data }) {
             <GatsbyImage
               image={frontmatter.image?.childImageSharp?.gatsbyImageData}
               alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
             />
           </Col>
           <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>

@@ -6,7 +6,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/harry.png'
+import Pic from '../images/artists/lock-it-up.jpg'
 
 function AboutPage({ data }) {
   return (

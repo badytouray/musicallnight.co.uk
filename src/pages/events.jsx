@@ -21,6 +21,7 @@ function EventsPage({ data }) {
                 // location={node.frontmatter.location}
                 // venue={node.frontmatter.venue}
                 url={`/events/${node.parent.name}/`}
+                style={{ borderStyle: 'groove', borderRadius: '5px' }}
               />
             </Col>
           ))}
