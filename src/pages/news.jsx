@@ -34,12 +34,9 @@ function NewsPage({ data }) {
             </Col>
           ))}
           <Col md={6} lg={7}>
-            <p className="fs-2">
+            <p className="fs-2 align-self-center mt-3">
               lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
-              for upcoming South coast local talent. Our mission is to provide networking events
-              with affordable tickets so everyone has access to the events. Our first event was held
-              at the legendary Volks Nightclub in Brighton. We also promote upcoming events and
-              follow the rise of upcoming DJs and local Brighton MCs.
+              for upcoming South coast local talent. .
             </p>
             <small>3min read</small>
           </Col>
