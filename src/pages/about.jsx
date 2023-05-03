@@ -145,7 +145,7 @@ function AboutPage({ data }) {
                   <h5 className="card-title ">Bady</h5>
                   <div>
                     <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      href="https://www.instagram.com/djbady_"
                       target="_blank"
                       rel="noreferrer"
                       className="m-2 p-2"

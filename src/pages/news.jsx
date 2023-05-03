@@ -20,10 +20,10 @@ function NewsPage({ data }) {
           WATCH TRAILER <i className="far fa-play-circle" />
         </Button> */}
       </HeroSection>
-      <Container className="text-center m-3">
+      <Container className="text-center m-3" style={{ height: '500px', width: '800px' }}>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col md={6} lg={5}>
+            <Col md={6} lg={6}>
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
@@ -33,13 +33,13 @@ function NewsPage({ data }) {
               />
             </Col>
           ))}
-          <Col md={6} lg={7}>
+          {/* <Col md={6} lg={6}>
             <p className="fs-2 align-self-center mt-3">
               lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
               for upcoming South coast local talent. .
             </p>
             <small>3min read</small>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Layout>

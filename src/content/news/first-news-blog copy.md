@@ -29,30 +29,12 @@ sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pret
 Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
 vestibulum mattis. Nulla et auctor massa.
 
-## The line up
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
-In tempus, urna quis feugiat tincidunt, nibh orci iaculis metus, vitae blandit lectus massa ut
-felis. Pellentesque quis pretium nunc. Donec egestas tortor leo. Praesent feugiat nunc sit amet odio
-laoreet, non sollicitudin quam tempus. Praesent ac ultrices tellus. In blandit imperdiet velit,
-vitae euismod justo. Nullam vel ipsum sit amet massa molestie sodales sit amet quis diam. Donec
-ultricies laoreet odio. Pellentesque vel mauris orci. Maecenas arcu mi, condimentum vitae imperdiet
-sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pretium sit amet justo.
-Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
-vestibulum mattis. Nulla et auctor massa.
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
-## The line up
-
-In tempus, urna quis feugiat tincidunt, nibh orci iaculis metus, vitae blandit lectus massa ut
-felis. Pellentesque quis pretium nunc. Donec egestas tortor leo. Praesent feugiat nunc sit amet odio
-laoreet, non sollicitudin quam tempus. Praesent ac ultrices tellus. In blandit imperdiet velit,
-vitae euismod justo. Nullam vel ipsum sit amet massa molestie sodales sit amet quis diam. Donec
-ultricies laoreet odio. Pellentesque vel mauris orci. Maecenas arcu mi, condimentum vitae imperdiet
-sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pretium sit amet justo.
-Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
-vestibulum mattis. Nulla et auctor massa.
-
-![alt text](../../images/artists/dj-bady.png){ width=60%, height:30px }
-<img src="../../images/artists/dj-bady.png" alt= “” width="200" height="200" />
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
+<img src="https://mma.prnewswire.com/media/1513369/Educative_Logo.jpg"  width="200" height="200">
 
 <iframe
     width="640"
