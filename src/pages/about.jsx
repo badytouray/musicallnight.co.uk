@@ -14,37 +14,36 @@ function AboutPage({ data }) {
       <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
       <Container>
         <Row>
-          <Col>
+          <Col sm={6} md={6} lg={12}>
             <h1 className="text-center pt-5">About Us</h1>
-            <div className="container">
-              <div className="row align-items-end ">
-                <div className="col col-md-4  align-self-start ">
-                  <img src={Pic} className=" m-10 card-img-top" alt="..." />
-                  <div className="contact-info">
-                    <h5>
-                      <TfiEmail size="1.5em" color="" className="m-3" />
-                      <a
-                        href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="m-2 p-2"
-                      >
-                        <RiInstagramFill size="1.5em" color="instagram" />
-                      </a>
-                      <a
-                        href="https://www.youtube.com/results?search_query=gatsby+query"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="m-2 p-2"
-                      >
-                        <BsFacebook size="1.5em" />
-                      </a>
-                      <BsTelephoneInboundFill className="m-3 fs-4" />
-                      075 3378 0033
-                    </h5>
-                  </div>
-                  {/* <button className="btn btn-danger">Email Us</button> */}
+            <div className="row align-items-end ">
+              <div className="col col-md-4  align-self-start ">
+                <img src={Pic} className=" m-10 card-img-top" alt="..." />
+                <div className="contact-info">
+                  <span>
+                    <TfiEmail size="1.5em" color="" className="m-3" />
+                    <a
+                      href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <RiInstagramFill size="1.5em" color="instagram" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/results?search_query=gatsby+query"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="m-2 p-2"
+                    >
+                      <BsFacebook size="1.5em" />
+                    </a>
+                    <BsTelephoneInboundFill className="m-3 fs-4" />
+                    075 3378 0033
+                  </span>
                 </div>
+              </div>
+              <Col>
                 <div className="col about-right align-self-end col-lg-8 p-5">
                   <h5>Who are we?</h5>
                   <p>
@@ -77,95 +76,99 @@ function AboutPage({ data }) {
                   </p>
                   {/* end of about decription */}
                 </div>
-              </div>
+              </Col>
             </div>
           </Col>
         </Row>
         {/* start of team images */}
-        <div className="container text-center">
-          <div className="row align-items-end">
-            <div className="col col-md-4">
-              <div className="card " style={{ width: '100%' }}>
-                <img src={Pic} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title ">Bobbie Tee</h5>
-                  <div>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <RiInstagramFill size="2em" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <BsFacebook size="2em" />
-                    </a>
+        <Row>
+          <Col xs={12} sm={12} md={3} lg={12}>
+            <div className="container text-center">
+              <div className="row align-items-end">
+                <div className="col col-md-4">
+                  <div className="card " style={{ width: '100%' }}>
+                    <img src={Pic} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title ">Bobbie Tee</h5>
+                      <div>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <RiInstagramFill size="2em" />
+                        </a>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <BsFacebook size="2em" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="col col-md-4">
-              <div className="card " style={{ width: '100%' }}>
-                <img src={Pic} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title ">James</h5>
-                  <div>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <RiInstagramFill size="2em" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <BsFacebook size="2em" />
-                    </a>
+                <div className="col col-md-4">
+                  <div className="card " style={{ width: '100%' }}>
+                    <img src={Pic} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title ">James</h5>
+                      <div>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <RiInstagramFill size="2em" />
+                        </a>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <BsFacebook size="2em" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="col col-md-4">
-              <div className="card " style={{ width: '100%' }}>
-                <img src={Pic} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title ">Bady</h5>
-                  <div>
-                    <a
-                      href="https://www.instagram.com/djbady_"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <RiInstagramFill size="2em" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <BsFacebook size="2em" />
-                    </a>
+                <div className="col col-md-4">
+                  <div className="card " style={{ width: '100%' }}>
+                    <img src={Pic} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title ">Bady</h5>
+                      <div>
+                        <a
+                          href="https://www.instagram.com/djbady_"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <RiInstagramFill size="2em" />
+                        </a>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <BsFacebook size="2em" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )

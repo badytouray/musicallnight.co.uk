@@ -52,7 +52,7 @@ function IndexPage({ data }) {
             <Row>
               <NewsSection
                 image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
-                // title="Latest news"
+                title="Latest blog"
                 // subtitle="celebrating the launch of our website"
               />
             </Row>
@@ -61,7 +61,7 @@ function IndexPage({ data }) {
             <Row>
               <ArtistSection
                 image={data.artist.childImageSharp.gatsbyImageData.images.fallback.src}
-                // title="Latest news"
+                title="DJ's and MC's"
                 // subtitle="Local artist's"
               />
             </Row>

@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import { NewsCard } from '../components/NewsCard'
@@ -29,7 +29,7 @@ function NewsPage({ data }) {
                 // name={node.frontmatter.name}
                 // intro={node.frontmatter.intro}
                 // url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
-                url={`/news/${node.parent.name}/`}
+                url={`/blog/${node.parent.name}/`}
               />
             </Col>
           ))}
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/news/*" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/blog/*" } }) {
       edges {
         node {
           id
