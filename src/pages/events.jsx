@@ -12,7 +12,7 @@ function EventsPage({ data }) {
         <p>Some text about Events</p>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col md={6} lg={4}>
+            <Col md={6} lg={4} className="mb-3">
               <EventCard
                 image={node.frontmatter.image}
                 name={node.frontmatter.name}

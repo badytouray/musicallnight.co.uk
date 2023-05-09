@@ -25,7 +25,8 @@ export function Navigation() {
             <NavLink to="/about/">About</NavLink>
             <NavLink to="/blog/">blog</NavLink>
             <NavLink to="/events/">Events</NavLink>
-            {/* <NavLink to="/artists/">Artists</NavLink> */}
+            <NavLink to="/all-artists/">Artists</NavLink>
+            <NavLink to="/open-decks/">Open Decks</NavLink>
             {/* <NavDropdown title="Other Stuff" id="navbar-integrations">
               <DropdownLink to="/things/">Things</DropdownLink>
               <DropdownLink to="/stuff/">Stuff</DropdownLink>

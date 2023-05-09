@@ -10,7 +10,7 @@ function EventsTemplate({ data }) {
 
   return (
     <Layout>
-      <Container className="m-3 p-3 ">
+      <Container className="mr-3 p-3 ">
         <Row>
           <Col className=" pt-5" sm={12} md={6} lg={6}>
             {/* <h1>{frontmatter?.name}</h1> */}
