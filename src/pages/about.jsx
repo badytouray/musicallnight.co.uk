@@ -14,6 +14,7 @@ function AboutPage({ data }) {
       <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
       <Container>
         <Row>
+
           <Col sm={6} md={6} lg={12}>
             <h1 className="text-center pt-5">About Us</h1>
             <div className="row align-items-end ">
@@ -30,19 +31,23 @@ function AboutPage({ data }) {
                     >
                       <RiInstagramFill size="1.5em" color="instagram" />
                     </a>
+
                     <a
                       href="https://www.youtube.com/results?search_query=gatsby+query"
                       target="_blank"
                       rel="noreferrer"
                       className="m-2 p-2"
+
                     >
                       <BsFacebook size="1.5em" />
+
                     </a>
                     <BsTelephoneInboundFill className="m-3 fs-4" />
                     075 3378 0033
                   </span>
                 </div>
               </div>
+
               <Col>
                 <div className="col about-right align-self-end col-lg-8 p-5">
                   <h5>Who are we?</h5>
@@ -75,9 +80,11 @@ function AboutPage({ data }) {
                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                   </p>
                   {/* end of about decription */}
+
                 </div>
               </Col>
             </div>
+
           </Col>
         </Row>
         {/* start of team images */}
@@ -163,12 +170,15 @@ function AboutPage({ data }) {
                         </a>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
             </div>
+
           </Col>
         </Row>
+
       </Container>
     </Layout>
   )

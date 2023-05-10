@@ -13,6 +13,7 @@ export function NewsCard({ name, image, url }) {
         style={{ borderRadius: '5px' }}
       />
       {/* <Card.Body>{intro}</Card.Body> */}
+
     </Card>
   )
 }
