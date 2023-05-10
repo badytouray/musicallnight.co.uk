@@ -10,64 +10,73 @@ import { Layout } from '../components/Layout'
 // import { NewsCard } from '../components/NewsCard'
 import { NewsSection } from '../components/NewsSection/NewsSection'
 
+import Phones from '../components/Phones/Phones'
+
+
 function IndexPage({ data }) {
   return (
     <Layout>
       <>
         <HeroSection
           image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-          title="Future Awaits"
-          subtitle="What are you waiting for?"
+
+          // title="Future Awaits"
+          // subtitle="What are you waiting for?"
         >
-          <Button as={Link} to="/contact" variant="primary" size="lg">
+          {/* <Button as={Link} to="/contact" variant="primary" size="lg">
+
             CONTACT US NOW
           </Button>
           <Button variant="primary" size="lg" onClick={console.log('hey')}>
             WATCH TRAILER <i className="far fa-play-circle" />
-          </Button>
+
+          </Button> */}
         </HeroSection>
-        {/* <Container> */}
-        <div className="text-center my-5">
-          <h1>Welcome to M.A.N</h1>
-          <p className="lead">
-            Welcome to the Music All Night Events Platform, created in 2021 to provide opportunities
-            for upcoming South coast local talent.{' '}
-          </p>
-        </div>
-        <div className="text-center my-5">
-          <h2>Featured events</h2>
-          <Row>
-            {data.events.edges.map(({ node }) => (
-              <Col md={6} lg={4}>
-                <EventCard
-                  // name={node.frontmatter.name}
-                  // intro={node.frontmatter.intro}
-                  image={node.frontmatter.image}
-                  url={`/events/${node.parent.name}/`}
-                />
-              </Col>
-            ))}
-          </Row>
-        </div>
-        <div>
-          <Row>
-            <NewsSection
-              image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
-              // title="Latest news"
-              subtitle="celebrating the launch of our website"
-            />
-          </Row>
-        </div>
-        <div>
-          <Row>
-            <ArtistSection
-              image={data.artist.childImageSharp.gatsbyImageData.images.fallback.src}
-              // title="Latest news"
-              subtitle="Local talented artist's"
-            />
-          </Row>
-        </div>
-        {/* <div className="text-center my-5 " style={{ width: '100%' }}>
+        <Container fluid>
+
+          <div className="text-center my-5">
+            <h1>Welcome to M.A.N</h1>
+            <p className="lead">
+              Welcome to the Music All Night Events Platform, created in 2021 to provide
+              opportunities for upcoming South coast local talent.{' '}
+            </p>
+          </div>
+          <div className="text-center my-5">
+            <h2>Featured events</h2>
+
+            <Phones />
+            <Row>
+              {data.events.edges.map(({ node }) => (
+                <Col md={6} lg={4} className="mb-3">
+                  <EventCard
+                    // name={node.frontmatter.name}
+                    // intro={node.frontmatter.intro}
+                    image={node.frontmatter.image}
+                    url={`/events/${node.parent.name}/`}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </div>
+          <div>
+            <Row>
+              <NewsSection
+                image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
+                title="Latest blog"
+                // subtitle="celebrating the launch of our website"
+              />
+            </Row>
+          </div>
+          <div>
+            <Row>
+              <ArtistSection
+                image={data.artist.childImageSharp.gatsbyImageData.images.fallback.src}
+                title="DJ's and MC's"
+                // subtitle="Local artist's"
+              />
+            </Row>
+          </div>
+          {/* <div className="text-center my-5 " style={{ width: '100%' }}>
             <h2>News</h2>
             <Row>
               {data.news.edges.map(({ node }) => (
@@ -78,31 +87,15 @@ function IndexPage({ data }) {
                     image={node.frontmatter.image}
                     url={`/news/${node.parent.name}/`}
 
-        <Container>
-          <div className="text-center my-5">
-            <h1>Welcome to M.A.N</h1>
-            <p className="lead">We do cool stuff</p>
-          </div>
-          <div className="text-center my-5">
-            <h2>Featured events</h2>
-            <Row>
-              {data.events.edges.map(({ node }) => (
-                <Col md={6} lg={4}>
-                  <EventCard
-                    name={node.frontmatter.name}
-                    intro={node.frontmatter.intro}
-                    image={node.frontmatter.image}
-                    url={`/events/${node.parent.name}/`}
                   />
                 </Col>
               ))}
             </Row>
           </div> */}
 
-        {/* <div className="text-center my-5">
 
-          </div>
-          <div className="text-center my-5">
+          {/* <div className="text-center my-5">
+
             <h2>Featured artists</h2>
             <Row>
               {data.artists.edges.map(({ node }) => (
@@ -117,25 +110,7 @@ function IndexPage({ data }) {
               ))}
             </Row>
           </div> */}
-        {/* </Container> */}
 
-
-          </div>
-          <div className="text-center my-5">
-            <h2>Featured events</h2>
-            <Row>
-              {data.events.edges.map(({ node }) => (
-                <Col md={6} lg={4}>
-                  <EventCard
-                    name={node.frontmatter.name}
-                    intro={node.frontmatter.intro}
-                    image={node.frontmatter.image}
-                    url={`/events/${node.parent.name}/`}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </div>
         </Container>
       </>
     </Layout>
@@ -165,15 +140,6 @@ export const pageQuery = graphql`
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
-      }
-    }
-    artist: file(relativePath: { eq: "artists/harry.png" }) {
-      relativePath
-      childImageSharp {
-        gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
-      }
-    }
-
 
       }
     }
@@ -186,30 +152,7 @@ export const pageQuery = graphql`
 
     events: allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/events/*" }, frontmatter: { featured: { eq: true } } }
-      limit: 3
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name
-            intro
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 540)
-              }
-            }
-          }
-          parent {
-            ... on File {
-              name
-            }
-          }
-        }
-      }
-    }
-    events: allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/events/*" }, frontmatter: { featured: { eq: true } } }
+
       limit: 3
     ) {
       edges {

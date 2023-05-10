@@ -3,7 +3,6 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
-
 import { Layout } from '../components/Layout'
 import TicketComponent from '../components/TicketComponent/TicketComponent'
 
@@ -16,18 +15,18 @@ function EventsTemplate({ data }) {
 
   return (
     <Layout>
-      <Container className="m-3 p-3 ">
+
+      <Container className="mr-3 p-3 ">
         <Row>
           <Col className=" pt-5" sm={12} md={6} lg={6}>
             {/* <h1>{frontmatter?.name}</h1> */}
-
             <GatsbyImage
               image={frontmatter.image?.childImageSharp?.gatsbyImageData}
               alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
             />
           </Col>
           <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
-
 
             <p>{frontmatter?.intro}</p>
             <p>{frontmatter?.date}</p>

@@ -16,9 +16,9 @@ export default function TicketComponent() {
           <Button
             size="lg"
             className="btn-danger"
-            onClick={() =>
-              showTicket('https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?')
-            }
+
+            onClick={() => showTicket('https://fixr.co/event/man-dial-tickets-995222867?')}
+
           >
             Buy Now
           </Button>

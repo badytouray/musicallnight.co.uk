@@ -1,7 +1,9 @@
 ---
 name: Bring Your USB
 intro: Bank holiday 28th May special
-image: ../../images/artists/dj-bady.png
+
+image: ../../images/artists/lock-it-up.jpg
+
 featured: true
 date: When - 2023-01-01 18:00:00
 venue: Venue - The Volks Nightclub
@@ -18,4 +20,3 @@ ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius
 
 Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
 ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
-

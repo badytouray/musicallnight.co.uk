@@ -1,9 +1,11 @@
 ---
-name: Dail first Headline set
+
+name: Dail First Headline set
 intro: 4th June
-image: ../../images/artists/dj-bady.png
+image: ../../images/artists/pic2.png
 featured: true
-date: When - 2023-01-01 18:00:00
+date: When - 2023-06-04 23:00:00
+
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
 ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
@@ -17,4 +19,8 @@ Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque bl
 ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
 et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum sollicitudin dolor eget
 facilisis.
+
+
+## Register to play at this event
+
 
