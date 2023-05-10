@@ -119,6 +119,33 @@ function AllParts({ data }) {
             <GatsbyImage image={data.dial.childImageSharp.gatsbyImageData} />
           </Col>
         </Row>
+        {/* // 5TH SECTION */}
+        <Row className=" mt-3 d-flex justify-content-evenly">
+          <Col lg="6">
+            <GatsbyImage image={data.dan.childImageSharp.gatsbyImageData} />
+          </Col>
+          <Col lg="6">
+            <h3 className="mt-5 ">8D</h3>
+            <p className="mt-5">
+              Hailing from Southern California, and now residing in Brighton, 8D comes correct with
+              a multi-genre flex from DnB, Bass House, Disco, Breaks, and 140. With international DJ
+              touring accolades and production nods from “Artist to watch 2023” by Beatport and
+              consistent “Staff Picks” from Juno downloads, 8D has shown the world he is the
+              complete DJ/Producer. He brings long mixes, big tunes, and good vibes to every set,
+              while keeping the crowd on their toes, and their rumps shaking. You’ll never know what
+              to expect from 8D except a consistently amazing set that shouldn’t be missed.
+            </p>
+            <a
+              href="https://www.instagram.com/dj8dmusic"
+              target="_blank"
+              rel="noreferrer"
+              className="m-2 p-2"
+              style={{ color: 'inherit', textDecoration: 'inherit' }}
+            >
+              <RiInstagramFill size="5em" /> @ 8D
+            </a>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )
@@ -179,6 +206,11 @@ export const pageQuery = graphql`
       }
     }
     mynx: file(relativePath: { eq: "artists/mynx.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 540)
+      }
+    }
+    dan: file(relativePath: { eq: "artists/8d.jpg" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }

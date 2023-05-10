@@ -11,13 +11,9 @@ function OpenDecks() {
       // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
-          <Col
-            lg={12}
-            className="m-3 justify-content-center"
-            style={{ width: 'auto', height: 'auto' }}
-          >
-            <h1 className="text-center m-3">Sign up TODAY</h1>
-            <p className="text-center fs-3">
+          <Col lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
+            <h1 className="text-center">Sign up TODAY</h1>
+            <p className="text-center fs-3 m-3">
               Attention all aspiring musicians! Have you been looking for an opportunity to get your
               music out there? Well, here's your chance! play at Brighton's most iconic underground
               venue. The Volks Nightclub.
@@ -34,13 +30,12 @@ function OpenDecks() {
               </a>
             </p>
           </Col>
-        </Row>
-        <Row>
-          <Col lg={12}>
+
+          <Col lg={6}>
             <img
               src={Pic}
-              alt="contact-music-all-night"
-              style={{ height: '800px', width: '800px', justifyContent: 'center' }}
+              alt="music-all-night-open-deck-sessions-volks-nightclub"
+              className="m-3"
             />
           </Col>
         </Row>
