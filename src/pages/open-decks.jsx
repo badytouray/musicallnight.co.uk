@@ -2,14 +2,13 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { MdAssignmentInd } from 'react-icons/md'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/dj-bady.png'
+import Pic from '../images/artists/open-decks.png'
 
 function OpenDecks() {
   return (
     <Layout>
       <Container
-        className="m-3 justify-content-center "
-        // style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
           <Col
@@ -25,7 +24,7 @@ function OpenDecks() {
               {/* <Button className="m-3"> */}
               {/* </Button> */}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScUbNlwMUmKgGJKCpHXnzAr-KcYPo55eeDhL4DPMI34yXVtcA/viewform?usp=pp_url"
+                href="https://forms.gle/xbhaenqsNqa3nxhz6"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: 'red', textDecoration: 'inherit' }}
@@ -37,11 +36,11 @@ function OpenDecks() {
           </Col>
         </Row>
         <Row>
-          <Col className="justify-content-center">
+          <Col lg={12}>
             <img
               src={Pic}
               alt="contact-music-all-night"
-              style={{ height: '800px', width: '800px' }}
+              style={{ height: '800px', width: '800px', justifyContent: 'center' }}
             />
           </Col>
         </Row>
@@ -53,7 +52,7 @@ function OpenDecks() {
 export default OpenDecks
 
 export function Head() {
-  return <title>Contact Us</title>
+  return <title> Open Decks Session | Volks Nightclub</title>
 }
 
 export const pageQuery = graphql`

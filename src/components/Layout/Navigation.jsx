@@ -23,7 +23,7 @@ export function Navigation() {
           <Nav as="ul" className="ms-auto">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>
-            <NavLink to="/blog/">blog</NavLink>
+            <NavLink to="/blog/">Blog</NavLink>
             <NavLink to="/events/">Events</NavLink>
             <NavLink to="/all-artists/">Artists</NavLink>
             <NavLink to="/open-decks/">Open Decks</NavLink>

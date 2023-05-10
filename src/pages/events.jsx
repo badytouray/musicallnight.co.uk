@@ -1,10 +1,29 @@
 import { graphql } from 'gatsby'
-import * as React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React, { useEffect } from 'react'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import { EventCard } from '../components/EventCard'
 import { Layout } from '../components/Layout'
 
 function EventsPage({ data }) {
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.src = 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
+
+    script.async = true
+
+    script.integrity = 'sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
+
+    script.crossOrigin = 'anonymous'
+
+    document.body.appendChild(script)
+
+    return () => {
+      // clean up the script when the component in unmounted
+      document.body.removeChild(script)
+    }
+  }, [])
+
   return (
     <Layout>
       <Container>
@@ -25,6 +44,13 @@ function EventsPage({ data }) {
               />
             </Col>
           ))}
+          <Col>
+            <div>
+              <Button href="https://fixr.co/event/man-dial-tickets-995222867?" type="button">
+                View shop{' '}
+              </Button>
+            </div>
+          </Col>
         </Row>
       </Container>
     </Layout>

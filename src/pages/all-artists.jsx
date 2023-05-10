@@ -2,7 +2,7 @@ import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 // import Fade from 'react-reveal/Fade';
-import { Button, Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import { RiInstagramFill } from 'react-icons/ri'
 import { Layout } from '../components/Layout/Layout'
@@ -29,7 +29,7 @@ function AllParts({ data }) {
               lyra lollipops.
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScUbNlwMUmKgGJKCpHXnzAr-KcYPo55eeDhL4DPMI34yXVtcA/viewform?usp=pp_url"
+              href="https://instagram.com/bobbieteeuk"
               target="_blank"
               rel="noreferrer"
               className="m-2 p-2"
@@ -98,12 +98,11 @@ function AllParts({ data }) {
           <Col lg="6">
             <h3 className="mt-5 ">Dial</h3>
             <p className="mt-5">
-              For those events that need some wow factor, our Fire Play performers know just how to
-              keep the audiences entertained and wanting more. From small solo ambient fire
-              performers to large choreographed fire shows, we can provide fire play entertainers
-              for any event. Our acts can supply a wide range of fire equipment from the wow factor
-              of fire breathing to incredible fire swords and hula-hoops to name but a few – our
-              entertainers ensure no-one looks away!
+              Dail started off 6 years ago messing around getting ideas for “cool drops” but then
+              decided he wanted to take producing seriously. Starting off with making EDM then
+              decided to make Drum and Bass as it has always been in his heart and wanted to make
+              the music that he loves. He has been played on Radio 1, Been at the top of the Hypedit
+              DNB chart 3 times and has managed to rack in over 700k plays over all platforms.
             </p>
             <a
               href="https://www.instagram.com/dialdnbuk"
