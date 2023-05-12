@@ -45,11 +45,6 @@ function EventsTemplate({ data }) {
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Col>
         </Row>
-        {/* <Row>
-          <Col>
-            <h3>Other events</h3>
-          </Col>
-        </Row> */}
       </Container>
     </Layout>
   )

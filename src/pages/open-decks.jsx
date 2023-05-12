@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { MdAssignmentInd } from 'react-icons/md'
@@ -15,8 +16,8 @@ function OpenDecks() {
             <h1 className="text-center">Sign up TODAY</h1>
             <p className="text-center fs-3 m-3">
               Attention all aspiring musicians! Have you been looking for an opportunity to get your
-              music out there? Well, here's your chance! play at Brighton's most iconic underground
-              venue. The Volks Nightclub.
+              music out there? Well, here is your chance! play at the most iconic Brighton
+              underground venue. The Volks Nightclub.
               {/* <Button className="m-3"> */}
               {/* </Button> */}
               <a
