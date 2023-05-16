@@ -49,11 +49,11 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
-  return <title>News</title>
+  return <title>Blog | South coast music blog</title>
 }
 
 export const pageQuery = graphql`
-  query ArtistsPage {
+  query BlogPage {
     heroImage: file(relativePath: { eq: "artists/harry.png" }) {
       relativePath
       childImageSharp {

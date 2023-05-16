@@ -81,7 +81,7 @@ function AboutPage({ data }) {
           </Col>
         </Row>
         {/* start of team images */}
-        <Row>
+        {/* <Row>
           <Col xs={12} sm={12} md={3} lg={12}>
             <div className="container text-center">
               <div className="row align-items-end">
@@ -137,9 +137,9 @@ function AboutPage({ data }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="col col-md-4">
+        {/* <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -164,11 +164,11 @@ function AboutPage({ data }) {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div> */}
+        {/* </div>
             </div>
-          </Col>
-        </Row>
+          </Col> */}
+        {/* </Row> */}
       </Container>
     </Layout>
   )

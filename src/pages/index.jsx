@@ -1,6 +1,6 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 // import { ArtistCard } from '../components/ArtistCard'
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
@@ -130,7 +130,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
       }
     }
-    artist: file(relativePath: { eq: "artists/harry.png" }) {
+    artist: file(relativePath: { eq: "artists/artist.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)

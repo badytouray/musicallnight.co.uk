@@ -12,7 +12,7 @@ function OpenDecks() {
       // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
-          <Col lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
+          <Col m={6} md={6} lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
             <h1 className="text-center">Sign up TODAY</h1>
             <p className="text-center fs-3 m-3">
               Attention all aspiring musicians! Have you been looking for an opportunity to get your
@@ -32,11 +32,12 @@ function OpenDecks() {
             </p>
           </Col>
 
-          <Col lg={6}>
+          <Col sm={6} md={6} lg={6}>
             <img
               src={Pic}
               alt="music-all-night-open-deck-sessions-volks-nightclub"
               className="m-3"
+              style={{ width: '800px', height: '800px', alignItems: 'center' }}
             />
           </Col>
         </Row>
