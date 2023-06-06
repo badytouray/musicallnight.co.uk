@@ -1,23 +1,28 @@
 import { graphql } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { MdAssignmentInd } from 'react-icons/md'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/open-decks.png'
+// import Pic from '../images/artists/open-decks.png'
 
-function OpenDecks() {
+function OpenDecks({ data }) {
   return (
     <Layout>
       <Container
-      // style={{ marginLeft: 'auto', marginRight: 'auto' }}
+        className="m-3"
+        // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
-          <Col m={6} md={6} lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
+          <Col className="m-3">
+            <GatsbyImage image={data.sign.childImageSharp.gatsbyImageData} />
+          </Col>
+          <Col sm={12} md={6} lg={6} className="m-3">
             <h1 className="text-center">Sign up TODAY</h1>
-            <p className="text-center fs-3 m-3">
+            <p className="text-center fs-3 mt-3">
               Attention all aspiring musicians! Have you been looking for an opportunity to get your
-              music out there? Well, here is your chance! play at the most iconic Brighton
-              underground venue. The Volks Nightclub.
+              music out there? Play at the most iconic Brighton underground venue, the Volks
+              Nightclub.
               {/* <Button className="m-3"> */}
               {/* </Button> */}
               <a
@@ -30,15 +35,6 @@ function OpenDecks() {
                 <MdAssignmentInd size="2em" /> (Sign Up)
               </a>
             </p>
-          </Col>
-
-          <Col sm={6} md={6} lg={6}>
-            <img
-              src={Pic}
-              alt="music-all-night-open-deck-sessions-volks-nightclub"
-              className="m-3"
-              style={{ width: '800px', height: '800px', alignItems: 'center' }}
-            />
           </Col>
         </Row>
       </Container>
@@ -53,26 +49,10 @@ export function Head() {
 }
 
 export const pageQuery = graphql`
-  query DecksPage {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/artists/*" } }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name
-            intro
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 540)
-              }
-            }
-          }
-          parent {
-            ... on File {
-              name
-            }
-          }
-        }
+  query OpenDecks {
+    sign: file(relativePath: { eq: "artists/open-decks.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 920)
       }
     }
   }

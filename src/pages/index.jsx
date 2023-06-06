@@ -4,11 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap'
 // import { ArtistCard } from '../components/ArtistCard'
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
+// import Fixr from '../components/Fixr/Fixr'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 // import { NewsCard } from '../components/NewsCard'
 import { NewsSection } from '../components/NewsSection/NewsSection'
-import Phones from '../components/Phones/Phones'
 
 function IndexPage({ data }) {
   return (
@@ -36,7 +36,6 @@ function IndexPage({ data }) {
           </div>
           <div className="text-center my-5">
             <h2>Featured events</h2>
-            <Phones />
             <Row>
               {data.events.edges.map(({ node }) => (
                 <Col md={6} lg={4} className="mb-3">
@@ -50,6 +49,7 @@ function IndexPage({ data }) {
               ))}
             </Row>
           </div>
+          {/* <Fixr /> */}
           <div>
             <Row>
               <NewsSection
