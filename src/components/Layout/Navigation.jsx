@@ -24,7 +24,9 @@ export function Navigation() {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>
             <NavLink to="/blog/">Blog</NavLink>
-            <NavLink to="/events/">Events</NavLink>
+            <NavLink as="a" href="https://fixr.co/organiser/490070507" target="_blank">
+              Events
+            </NavLink>
             <NavLink to="/all-artists/">Artists</NavLink>
             <NavLink to="/open-decks/">Open Decks</NavLink>
             {/* <NavDropdown title="Other Stuff" id="navbar-integrations">

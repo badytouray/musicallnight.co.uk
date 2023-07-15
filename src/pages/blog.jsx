@@ -49,7 +49,7 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
-  return <title>Blog | South coast music blog</title>
+  return <title>Blog | Music All Night</title>
 }
 
 export const pageQuery = graphql`
