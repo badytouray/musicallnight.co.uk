@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import { NewsCard } from '../components/NewsCard'
@@ -8,11 +8,11 @@ import { NewsCard } from '../components/NewsCard'
 function NewsPage({ data }) {
   return (
     <Layout>
-
       <HeroSection
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
         // subtitle="Read some stuff about some stuff"
+
       >
         {/* <Button as={Link} to="/contact" variant="primary" size="lg">
           Read now
@@ -21,27 +21,28 @@ function NewsPage({ data }) {
           WATCH TRAILER <i className="far fa-play-circle" />
         </Button> */}
       </HeroSection>
-      <Container className="text-center mr-3 p-3 mb-3">
+      <Container className="text-center m-3">
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col sm={12} md={3} lg={6} className="p-3 mb-3">
+            <Col md={6} lg={5}>
+
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
                 // intro={node.frontmatter.intro}
                 // url="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
-                url={`/blog/${node.parent.name}/`}
+                url={`/news/${node.parent.name}/`}
               />
             </Col>
           ))}
-
-          {/* <Col md={6} lg={6}>
+          <Col md={6} lg={7}>
             <p className="fs-2 align-self-center mt-3">
               lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
               for upcoming South coast local talent. .
             </p>
             <small>3min read</small>
-          </Col> */}
+          </Col>
+
         </Row>
       </Container>
     </Layout>
@@ -51,7 +52,6 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
-
   return <title>News</title>
 }
 
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/blog/*" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/news/*" } }) {
       edges {
         node {
           id

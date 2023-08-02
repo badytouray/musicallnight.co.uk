@@ -7,22 +7,32 @@ import Pic from '../images/artists/dj-bady.png'
 function Contact() {
   return (
     <Layout>
+
+
       <Container className="m-3">
         <Row>
+
           <Col
             lg={12}
             className="m-3 justify-content-center"
             style={{ width: 'auto', height: 'auto' }}
           >
             <h1 className="text-center m-3">Contact us</h1>
+
+
             <p className="text-center fs-3 m-3">Contact us at musicallnight365@gmail.com</p>
+
             <img
               src={Pic}
               alt="contact-music-all-night"
               style={{ height: '800px', width: '800px' }}
+
+
               className="m-3"
+
             />
           </Col>
+          {/* </Card> */}
         </Row>
       </Container>
     </Layout>

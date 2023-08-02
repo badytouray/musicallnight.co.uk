@@ -23,12 +23,14 @@ export function Navigation() {
           <Nav as="ul" className="ms-auto">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>
+
+
+
             <NavLink to="/blog/">Blog</NavLink>
-            <NavLink as="a" href="https://fixr.co/organiser/490070507" target="_blank">
-              Events
-            </NavLink>
+            <NavLink to="/events/">Events</NavLink>
             <NavLink to="/all-artists/">Artists</NavLink>
             <NavLink to="/open-decks/">Open Decks</NavLink>
+
             {/* <NavDropdown title="Other Stuff" id="navbar-integrations">
               <DropdownLink to="/things/">Things</DropdownLink>
               <DropdownLink to="/stuff/">Stuff</DropdownLink>

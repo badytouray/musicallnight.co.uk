@@ -5,6 +5,25 @@ import { EventCard } from '../components/EventCard'
 import { Layout } from '../components/Layout'
 
 function EventsPage({ data }) {
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.src = 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
+
+    script.async = true
+
+    script.integrity = 'sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
+
+    script.crossOrigin = 'anonymous'
+
+    document.body.appendChild(script)
+
+    return () => {
+      // clean up the script when the component in unmounted
+      document.body.removeChild(script)
+    }
+  }, [])
+
   return (
     <Layout>
       <Container>
@@ -27,10 +46,8 @@ function EventsPage({ data }) {
           ))}
           <Col>
             <div>
-              <Button
-                src="https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js"
-                type="button"
-              >
+
+              <Button href="https://fixr.co/event/man-dial-tickets-995222867?" type="button">
                 View shop{' '}
               </Button>
             </div>

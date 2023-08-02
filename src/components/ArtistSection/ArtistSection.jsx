@@ -11,6 +11,7 @@ export function ArtistSection({ image, title, subtitle, children }) {
       {children && <div className={s.btns}>{children}</div>}
       <Button style={{ width: '25%' }} as={Link} to="/all-artists" size="lg">
         View talent
+
       </Button>
     </div>
   )

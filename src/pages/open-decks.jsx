@@ -1,28 +1,24 @@
-import { graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { MdAssignmentInd } from 'react-icons/md'
 import { Layout } from '../components/Layout'
-// import Pic from '../images/artists/open-decks.png'
 
-function OpenDecks({ data }) {
+import Pic from '../images/artists/open-decks.png'
+
+function OpenDecks() {
   return (
     <Layout>
       <Container
-        className="m-3"
-        // style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
-          <Col className="m-3">
-            <GatsbyImage image={data.sign.childImageSharp.gatsbyImageData} />
-          </Col>
-          <Col sm={12} md={6} lg={6} className="m-3">
+          <Col lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
             <h1 className="text-center">Sign up TODAY</h1>
-            <p className="text-center fs-3 mt-3">
+            <p className="text-center fs-3 m-3">
               Attention all aspiring musicians! Have you been looking for an opportunity to get your
-              music out there? Play at the most iconic Brighton underground venue, the Volks
-              Nightclub.
+              music out there? Well, here's your chance! play at Brighton's most iconic underground
+              venue. The Volks Nightclub.
               {/* <Button className="m-3"> */}
               {/* </Button> */}
               <a
@@ -35,6 +31,15 @@ function OpenDecks({ data }) {
                 <MdAssignmentInd size="2em" /> (Sign Up)
               </a>
             </p>
+          </Col>
+
+
+          <Col lg={6}>
+            <img
+              src={Pic}
+              alt="music-all-night-open-deck-sessions-volks-nightclub"
+              className="m-3"
+            />
           </Col>
         </Row>
       </Container>
@@ -49,10 +54,27 @@ export function Head() {
 }
 
 export const pageQuery = graphql`
-  query OpenDecks {
-    sign: file(relativePath: { eq: "artists/open-decks.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 920)
+
+  query DecksPage {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/artists/*" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            intro
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 540)
+              }
+            }
+          }
+          parent {
+            ... on File {
+              name
+            }
+          }
+        }
       }
     }
   }

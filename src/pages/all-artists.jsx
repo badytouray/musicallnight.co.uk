@@ -10,7 +10,8 @@ import { Layout } from '../components/Layout/Layout'
 function AllParts({ data }) {
   return (
     <Layout>
-      <h1 className="text-center mt-5 ">Artists to watch 2023</h1>
+
+      <h1 className="text-center mt-5">Artists to watch 2023</h1>
 
       <Container className="mt-3 justify-content-around">
         <Row>
@@ -41,7 +42,8 @@ function AllParts({ data }) {
         </Row>
 
         {/* // 2ND SECTION */}
-        <Row className="mt-3 d-flex justify-content-evenly flex-column-reverse flex-sm-row">
+
+        <Row className="mt-3 d-flex justify-content-evenly">
           <Col lg="6">
             <h3 className="mt-5">Zebberz</h3>
             <p className="align-self-center mt-5">
@@ -67,7 +69,8 @@ function AllParts({ data }) {
         </Row>
 
         {/* // 3RD SECTION */}
-        <Row className=" mt-3 d-flex justify-content-evenly flex-sm-row ">
+
+        <Row className=" mt-3 d-flex justify-content-evenly ">
           <Col lg="6">
             <GatsbyImage image={data.mynx.childImageSharp.gatsbyImageData} />
           </Col>
@@ -94,7 +97,8 @@ function AllParts({ data }) {
         </Row>
 
         {/* // 4TH SECTION */}
-        <Row className=" mt-3 d-flex justify-content-evenly flex-column-reverse flex-sm-row">
+
+        <Row className=" mt-3 d-flex justify-content-evenly">
           <Col lg="6">
             <h3 className="mt-5 ">Dial</h3>
             <p className="mt-5">
@@ -200,7 +204,8 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 540)
       }
     }
-    dial: file(relativePath: { eq: "artists/dial.png" }) {
+
+    dial: file(relativePath: { eq: "artists/Dial.png" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }

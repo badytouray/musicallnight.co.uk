@@ -8,6 +8,7 @@ function Footer() {
         <Row>
           <Col>
             <div>M.A.N @2023</div>
+
           </Col>
         </Row>
       </div>
