@@ -2,6 +2,7 @@
 name: Bring Your USB
 intro: Bank holiday 28th May special
 
+
 image: ../../images/artists/lock-it-up.jpg
 
 featured: true
@@ -9,6 +10,7 @@ date: When - 2023-01-01 18:00:00
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
 ticket: 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
+
 
 ## About
 

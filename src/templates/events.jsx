@@ -3,6 +3,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
+
 import { Layout } from '../components/Layout'
 import TicketComponent from '../components/TicketComponent/TicketComponent'
 
@@ -16,6 +17,7 @@ function EventsTemplate({ data }) {
   return (
     <Layout>
 
+
       <Container className="mr-3 p-3 ">
         <Row>
           <Col className=" pt-5" sm={12} md={6} lg={6}>
@@ -28,11 +30,13 @@ function EventsTemplate({ data }) {
           </Col>
           <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
 
+
             <p>{frontmatter?.intro}</p>
             <p>{frontmatter?.date}</p>
             <p>{frontmatter?.venue}</p>
             <p>{frontmatter?.location}</p>
             {/* <div className="text-left">
+
 
               <p>Tickets from £8</p>
               <Button
@@ -53,6 +57,7 @@ function EventsTemplate({ data }) {
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Col>
         </Row>
+
         {/* <Row>
           <Col>
             <h3>Other events</h3>

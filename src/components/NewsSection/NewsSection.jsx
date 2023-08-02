@@ -10,6 +10,7 @@ export function NewsSection({ image, title, subtitle, children }) {
       {subtitle && <p>{subtitle}</p>}
       {children && <div className={s.btns}>{children}</div>}
 
+
       <Button style={{ width: '25%' }} as={Link} to="/blog" size="lg">
 
         Read more

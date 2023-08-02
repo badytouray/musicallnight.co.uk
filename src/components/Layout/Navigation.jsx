@@ -24,6 +24,8 @@ export function Navigation() {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>
 
+
+
             <NavLink to="/blog/">Blog</NavLink>
             <NavLink to="/events/">Events</NavLink>
             <NavLink to="/all-artists/">Artists</NavLink>

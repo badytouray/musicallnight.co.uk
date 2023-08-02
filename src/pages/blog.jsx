@@ -8,6 +8,7 @@ import { NewsCard } from '../components/NewsCard'
 function NewsPage({ data }) {
   return (
     <Layout>
+
       <HeroSection
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
@@ -33,6 +34,7 @@ function NewsPage({ data }) {
               />
             </Col>
           ))}
+
           {/* <Col md={6} lg={6}>
             <p className="fs-2 align-self-center mt-3">
               lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
@@ -49,6 +51,7 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
+
   return <title>News</title>
 }
 

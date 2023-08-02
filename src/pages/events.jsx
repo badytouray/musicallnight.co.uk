@@ -46,6 +46,7 @@ function EventsPage({ data }) {
           ))}
           <Col>
             <div>
+
               <Button href="https://fixr.co/event/man-dial-tickets-995222867?" type="button">
                 View shop{' '}
               </Button>

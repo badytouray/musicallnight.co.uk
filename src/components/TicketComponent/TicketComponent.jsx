@@ -17,6 +17,7 @@ export default function TicketComponent() {
             size="lg"
             className="btn-danger"
 
+
             onClick={() => showTicket('https://fixr.co/event/man-dial-tickets-995222867?')}
 
           >

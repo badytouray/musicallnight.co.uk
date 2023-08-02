@@ -1,12 +1,9 @@
 ---
-
-
-name: Dail First Headline set
-intro: 4th June
-image: ../../images/artists/pic2.png
+name: Dail's first Headline set at Volks
+intro: Who is Dail?
+image: ../../images/artists/Dial.png
 featured: true
 date: When - 2023-06-04 23:00:00
-
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
 ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
@@ -60,16 +57,3 @@ because it is one not to be missed.
 To sum up, Dial's journey to his debut headlining performance in Brighton's Volks nightclub has been
 one of love, devotion, and hard work. We hope to see you there as we commemorate this significant
 occasion. Let's unite and acknowledge the influence of music.
-## What to expect??
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ipsum pellentesque, suscipit
-ligula at, tristique dui. Curabitur aliquet dui ac lectus malesuada, sit amet tempus libero mollis.
-Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
-ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
-et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum sollicitudin dolor eget
-facilisis.
-
-
-## Register to play at this event
-
-

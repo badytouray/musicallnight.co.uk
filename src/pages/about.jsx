@@ -15,6 +15,7 @@ function AboutPage({ data }) {
       <Container>
         <Row>
 
+
           <Col sm={6} md={6} lg={12}>
             <h1 className="text-center pt-5">About Us</h1>
             <div className="row align-items-end ">
@@ -37,6 +38,7 @@ function AboutPage({ data }) {
                       target="_blank"
                       rel="noreferrer"
                       className="m-2 p-2"
+
 
                     >
                       <BsFacebook size="1.5em" />
@@ -81,6 +83,7 @@ function AboutPage({ data }) {
                   </p>
                   {/* end of about decription */}
 
+
                 </div>
               </Col>
             </div>
@@ -117,6 +120,7 @@ function AboutPage({ data }) {
                       </div>
                     </div>
                   </div>
+
                 </div>
 
                 <div className="col col-md-4">
@@ -173,8 +177,63 @@ function AboutPage({ data }) {
 
                   </div>
                 </div>
-              </div>
+
+                <div className="col col-md-4">
+                  <div className="card " style={{ width: '100%' }}>
+                    <img src={Pic} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title ">James</h5>
+                      <div>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <RiInstagramFill size="2em" />
+                        </a>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <BsFacebook size="2em" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+
+        {/* <div className="col col-md-4">
+                  <div className="card " style={{ width: '100%' }}>
+                    <img src={Pic} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title ">Bady</h5>
+                      <div>
+                        <a
+                          href="https://www.instagram.com/djbady_"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <RiInstagramFill size="2em" />
+                        </a>
+                        <a
+                          href="https://www.youtube.com/results?search_query=gatsby+query"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="m-2 p-2"
+                        >
+                          <BsFacebook size="2em" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+        {/* </div>
             </div>
+
 
           </Col>
         </Row>
