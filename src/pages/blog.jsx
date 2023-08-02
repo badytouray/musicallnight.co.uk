@@ -8,18 +8,7 @@ import { NewsCard } from '../components/NewsCard'
 function NewsPage({ data }) {
   return (
     <Layout>
-      <HeroSection
-        image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-        // title="Future Awaits"
-        // subtitle="Read some stuff about some stuff"
-      >
-        {/* <Button as={Link} to="/contact" variant="primary" size="lg">
-          Read now
-        </Button> */}
-        {/* <Button variant="primary" size="lg" onClick={console.log('hey')}>
-          WATCH TRAILER <i className="far fa-play-circle" />
-        </Button> */}
-      </HeroSection>
+      <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
       <Container className="text-center mr-3 p-3 mb-3">
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -33,13 +22,6 @@ function NewsPage({ data }) {
               />
             </Col>
           ))}
-          {/* <Col md={6} lg={6}>
-            <p className="fs-2 align-self-center mt-3">
-              lurom Welcome to the Music Events Platform, created in 2021 to provide opportunities
-              for upcoming South coast local talent. .
-            </p>
-            <small>3min read</small>
-          </Col> */}
         </Row>
       </Container>
     </Layout>
@@ -49,7 +31,7 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
-  return <title>Blog | South coast music blog</title>
+  return <title>Blog | Music All Night</title>
 }
 
 export const pageQuery = graphql`
