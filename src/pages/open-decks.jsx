@@ -1,9 +1,8 @@
-
+import { graphql } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { MdAssignmentInd } from 'react-icons/md'
 import { Layout } from '../components/Layout'
-
 import Pic from '../images/artists/open-decks.png'
 
 function OpenDecks() {
@@ -33,7 +32,6 @@ function OpenDecks() {
             </p>
           </Col>
 
-
           <Col lg={6}>
             <img
               src={Pic}
@@ -54,7 +52,6 @@ export function Head() {
 }
 
 export const pageQuery = graphql`
-
   query DecksPage {
     allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/artists/*" } }) {
       edges {
