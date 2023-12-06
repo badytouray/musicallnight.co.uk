@@ -117,61 +117,7 @@ function AboutPage({ data }) {
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h5 className="card-title ">James</h5>
-                      <div>
-                        <a
-                          href="https://www.youtube.com/results?search_query=gatsby+query"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="m-2 p-2"
-                        >
-                          <RiInstagramFill size="2em" />
-                        </a>
-                        <a
-                          href="https://www.youtube.com/results?search_query=gatsby+query"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="m-2 p-2"
-                        >
-                          <BsFacebook size="2em" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col col-md-4">
-                  <div className="card " style={{ width: '100%' }}>
-                    <img src={Pic} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title ">Bady</h5>
-                      <div>
-                        <a
-                          href="https://www.instagram.com/djbady_"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="m-2 p-2"
-                        >
-                          <RiInstagramFill size="2em" />
-                        </a>
-                        <a
-                          href="https://www.youtube.com/results?search_query=gatsby+query"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="m-2 p-2"
-                        >
-                          <BsFacebook size="2em" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col col-md-4">
-                  <div className="card " style={{ width: '100%' }}>
-                    <img src={Pic} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title ">James</h5>
+                      <h5 className="card-title ">Darren</h5>
                       <div>
                         <a
                           href="https://www.youtube.com/results?search_query=gatsby+query"

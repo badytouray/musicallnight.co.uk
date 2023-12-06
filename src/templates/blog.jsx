@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-// import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 
 function SocialLink({ text, url }) {
@@ -19,39 +19,39 @@ function NewsPage({ data }) {
 
   return (
     <Layout>
-      {/* <HeroSection
-        title={frontmatter?.name}
-        image={frontmatter.image?.childImageSharp.gatsbyImageData.images.fallback.src}
-      /> */}
-      <Container className="text-center" style={{ Width: '400px' }}>
+      <Container className="mr-3 p-3 ">
         <Row>
-          <Col>
+          <Col className=" pt-5" sm={12} md={6} lg={6}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
             <p>{frontmatter?.intro}</p>
-            <hr />
+            <p>{frontmatter?.date}</p>
+            <p>{frontmatter?.venue}</p>
+            <p>{frontmatter?.location}</p>
+            {/* <div className="text-left">
+
+
+              <p>Tickets from £8</p>
+              <Button
+                className="btn-right"
+                size="lg"
+                as="a"
+                // href={frontmatter?.ticket}
+                // target="_blank"
+                href="https://fixr.co/event/bring-your-usb-sun-7th-may-tickets-340368492?"
+              >
+                Buy Tickets
+              </Button>
+            </div> */}
+            <Col className="m-3" xs={12} sm={12} md={6} lg={8} />
 
             <div dangerouslySetInnerHTML={{ __html: html }} />
-
-            {frontmatter.social && (
-              <>
-                <h2>Social Links</h2>
-                {frontmatter.social && (
-                  <>
-                    {frontmatter.social.facebook && (
-                      <SocialLink text="Facebook" url={frontmatter.social.facebook} />
-                    )}
-                    {frontmatter.social.instagram && (
-                      <SocialLink text="Instagram" url={frontmatter.social.instagram} />
-                    )}
-                    {frontmatter.social.twitter && (
-                      <SocialLink text="Twitter" url={frontmatter.social.twitter} />
-                    )}
-                    {frontmatter.social.youtube && (
-                      <SocialLink text="YouTube" url={frontmatter.social.youtube} />
-                    )}
-                  </>
-                )}
-              </>
-            )}
           </Col>
         </Row>
       </Container>
