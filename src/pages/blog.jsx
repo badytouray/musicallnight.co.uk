@@ -8,7 +8,6 @@ import { NewsCard } from '../components/NewsCard'
 function NewsPage({ data }) {
   return (
     <Layout>
-
       <HeroSection
         image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
         // title="Future Awaits"
@@ -22,9 +21,10 @@ function NewsPage({ data }) {
         </Button> */}
       </HeroSection>
       <Container className="text-center mr-3 p-3 mb-3">
+        <h1>Some info about a blog website we do</h1>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col sm={12} md={3} lg={6} className="p-3 mb-3">
+            <Col sm={12} md={3} lg={4} className="p-3 mb-3">
               <NewsCard
                 image={node.frontmatter.image}
                 // name={node.frontmatter.name}
@@ -51,7 +51,6 @@ function NewsPage({ data }) {
 export default NewsPage
 
 export function Head() {
-
   return <title>News</title>
 }
 

@@ -25,29 +25,6 @@ The venue for this event is none other than Brighton's legendary underground Vol
 venue has been the go-to spot for music lovers for years, and it's not hard to see why. The
 atmosphere is electric, open till 7am on the weekends and holds other amazing events such as the
 
-<!-- ![alt text](../../images/artists/open-decks.png){ width=300px, height:300px } -->
 <a href="/open-decks">
 <button >Sign Up! </Button>
 </a>
-<img src="../../images/artists/open-decks.png" width="200" height="100">
-
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
-
- <!-- <iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/watch?v=FhsuRZh3sQg"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
-> 
-</iframe> -->

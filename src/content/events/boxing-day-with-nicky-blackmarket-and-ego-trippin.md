@@ -1,11 +1,11 @@
 ---
-name: Bring Your USB
-intro: Bank holiday 28th May special
+name: Nicky Blackmarket & Ego Trippin
+intro: Boxing Day secial
 
-image: ../../images/artists/lock-it-up.jpg
+image: ../../images/artists/boxing-day.jpeg
 
 featured: true
-date: When - 2023-01-01 18:00:00
+date: When - 2023-26-12 23:00:00
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
 ticket: 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'

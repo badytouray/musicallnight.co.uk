@@ -1,21 +1,23 @@
 ---
-name: Bring Your USB
-intro: Bank holiday 7th May special
+name: 5 years of Spin Cycle
+intro: Party at the Actors pub, Brighton
 
-image: ../../images/artists/pic1.png
+image: ../../images/artists/spin-cycle-event.jpeg
 
 featured: true
 date: When - 2023-01-01 18:00:00
-venue: Venue - The Volks Nightclub
+venue: Venue - The Actors Pub
 location: Location - Brighton
-ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
+ticket: 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
 ---
 
-## What to expect??
+## About
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ipsum pellentesque, suscipit
 ligula at, tristique dui. Curabitur aliquet dui ac lectus malesuada, sit amet tempus libero mollis.
+
 Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
 ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
-et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum sollicitudin dolor eget
-facilisis.
+
+Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
+ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus

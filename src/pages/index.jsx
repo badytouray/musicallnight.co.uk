@@ -1,7 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
-// import { ArtistCard } from '../components/ArtistCard'
+import { Col, Container, Row } from 'react-bootstrap'
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
@@ -122,7 +121,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query IndexPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/man_banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(
