@@ -1,6 +1,11 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
+<<<<<<< HEAD
 import { Col, Container, Row } from 'react-bootstrap'
+=======
+import { Button, Col, Container, Row } from 'react-bootstrap'
+// import { ArtistCard } from '../components/ArtistCard'
+>>>>>>> origin/master
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
