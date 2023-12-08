@@ -28,3 +28,7 @@ ultricies laoreet odio. Pellentesque vel mauris orci. Maecenas arcu mi, condimen
 sed, posuere et elit. Integer ultricies dolor vel purus vestibulum volutpat pretium sit amet justo.
 Morbi tempor est quam, in venenatis lorem luctus sit amet. Donec volutpat odio facilisis neque
 vestibulum mattis. Nulla et auctor massa.
+
+<a href="/blog">
+<button >Back to blog </Button>
+</a>

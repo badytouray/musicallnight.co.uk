@@ -39,6 +39,33 @@ function NewsPage({ data }) {
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Col>
         </Row>
+        <Row>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+        </Row>
+        <Row />
       </Container>
     </Layout>
   )

@@ -57,3 +57,7 @@ because it is one not to be missed.
 To sum up, Dial's journey to his debut headlining performance in Brighton's Volks nightclub has been
 one of love, devotion, and hard work. We hope to see you there as we commemorate this significant
 occasion. Let's unite and acknowledge the influence of music.
+
+<a href="/blog">
+<button >Back to blog </Button>
+</a>
