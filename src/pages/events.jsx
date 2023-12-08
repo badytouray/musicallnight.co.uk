@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import React, { useEffect } from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { EventCard } from '../components/EventCard'
 import { Layout } from '../components/Layout'
 
