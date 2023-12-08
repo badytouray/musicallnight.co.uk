@@ -1,19 +1,14 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-
 import { Button, Col, Container, Row } from 'react-bootstrap'
 // import { ArtistCard } from '../components/ArtistCard'
 import { ArtistSection } from '../components/ArtistSection'
-
 import { EventCard } from '../components/EventCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 // import { NewsCard } from '../components/NewsCard'
 import { NewsSection } from '../components/NewsSection/NewsSection'
-
-
 import Phones from '../components/Phones/Phones'
-
 
 function IndexPage({ data }) {
   return (
@@ -21,7 +16,6 @@ function IndexPage({ data }) {
       <>
         <HeroSection
           image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-
 
           // title="Future Awaits"
           // subtitle="What are you waiting for?"
@@ -38,7 +32,6 @@ function IndexPage({ data }) {
           </Button> */}
         </HeroSection>
         <Container fluid>
-
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
             <p className="lead">
@@ -48,7 +41,6 @@ function IndexPage({ data }) {
           </div>
           <div className="text-center my-5">
             <h2>Featured events</h2>
-
 
             <Phones />
             <Row>
@@ -100,8 +92,6 @@ function IndexPage({ data }) {
             </Row>
           </div> */}
 
-
-
           {/* <div className="text-center my-5">
 
             <h2>Featured artists</h2>
@@ -118,7 +108,6 @@ function IndexPage({ data }) {
               ))}
             </Row>
           </div> */}
-
         </Container>
       </>
     </Layout>
@@ -144,15 +133,13 @@ export const pageQuery = graphql`
         )
       }
     }
-    news: file(relativePath: { eq: "artists/harry.png" }) {
+    news: file(relativePath: { eq: "artists/dj-bady.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
-
-
       }
     }
-    artist: file(relativePath: { eq: "artists/harry.png" }) {
+    artist: file(relativePath: { eq: "artists/dj-bady.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)

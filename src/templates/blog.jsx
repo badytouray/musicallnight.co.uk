@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-// import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 
 function SocialLink({ text, url }) {
@@ -19,41 +19,53 @@ function NewsPage({ data }) {
 
   return (
     <Layout>
-      {/* <HeroSection
-        title={frontmatter?.name}
-        image={frontmatter.image?.childImageSharp.gatsbyImageData.images.fallback.src}
-      /> */}
-      <Container className="text-center" style={{ Width: '400px' }}>
+      <Container className="mr-3 p-3 ">
         <Row>
-          <Col>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={2} lg={2}>
             <p>{frontmatter?.intro}</p>
-            <hr />
-
+            <p>{frontmatter?.date}</p>
+            <p>{frontmatter?.venue}</p>
+            <p>{frontmatter?.location}</p>
+          </Col>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-
-            {frontmatter.social && (
-              <>
-                <h2>Social Links</h2>
-                {frontmatter.social && (
-                  <>
-                    {frontmatter.social.facebook && (
-                      <SocialLink text="Facebook" url={frontmatter.social.facebook} />
-                    )}
-                    {frontmatter.social.instagram && (
-                      <SocialLink text="Instagram" url={frontmatter.social.instagram} />
-                    )}
-                    {frontmatter.social.twitter && (
-                      <SocialLink text="Twitter" url={frontmatter.social.twitter} />
-                    )}
-                    {frontmatter.social.youtube && (
-                      <SocialLink text="YouTube" url={frontmatter.social.youtube} />
-                    )}
-                  </>
-                )}
-              </>
-            )}
           </Col>
         </Row>
+        <Row>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+          <Col className=" pt-5" sm={12} md={4} lg={4}>
+            {/* <h1>{frontmatter?.name}</h1> */}
+            <GatsbyImage
+              image={frontmatter.image?.childImageSharp?.gatsbyImageData}
+              alt={data?.markdownRemark.frontmatter?.name}
+              style={{ borderStyle: 'groove', borderRadius: '5px' }}
+            />
+          </Col>
+        </Row>
+        <Row />
       </Container>
     </Layout>
   )
@@ -74,7 +86,7 @@ export const pageQuery = graphql`
         intro
         image {
           childImageSharp {
-            gatsbyImageData(width: 1080)
+            gatsbyImageData(width: 640)
           }
         }
         social {
