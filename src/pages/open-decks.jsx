@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { MdAssignmentInd } from 'react-icons/md'
 import { Layout } from '../components/Layout'
 import Pic from '../images/artists/open-decks.png'
 
@@ -15,24 +14,45 @@ function OpenDecks() {
           <Col lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
             <h1 className="text-center">Sign up TODAY</h1>
             <p className="text-center fs-3 m-3">
-              Attention all aspiring musicians! Have you been looking for an opportunity to get your
-              music out there? Well, here's your chance! play at Brighton's most iconic underground
-              venue. The Volks Nightclub.
-              {/* <Button className="m-3"> */}
-              {/* </Button> */}
+              Attention all aspiring musicians! Get your music on radio, check our Youtube channel.
               <a
-                href="https://forms.gle/xbhaenqsNqa3nxhz6"
+                href="https://youtube.com/@music_all_night"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: 'red', textDecoration: 'inherit' }}
                 className="mt-3"
               >
-                <MdAssignmentInd size="2em" /> (Sign Up)
+                (Watch now)
               </a>
             </p>
-          </Col>
 
-          <Col lg={6}>
+            <img
+              src={Pic}
+              alt="music-all-night-open-deck-sessions-volks-nightclub"
+              className="m-3"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} lg={3} className="m-3">
+            <img
+              src={Pic}
+              alt="music-all-night-open-deck-sessions-volks-nightclub"
+              className="m-3"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} lg={3} className="m-3">
+            <img
+              src={Pic}
+              alt="music-all-night-open-deck-sessions-volks-nightclub"
+              className="m-3"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} lg={3} className="m-3">
             <img
               src={Pic}
               alt="music-all-night-open-deck-sessions-volks-nightclub"
