@@ -21,7 +21,8 @@ function NewsPage({ data }) {
         </Button> */}
       </HeroSection>
       <Container className="text-center mr-3 p-3 mb-3">
-        <h1>Some info about a blog website we do</h1>
+        <h1>Welcome to Music All Night</h1>
+        <h5>Stay up to date with what happens in Brighton</h5>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Col sm={12} md={3} lg={4} className="p-3 mb-3">
