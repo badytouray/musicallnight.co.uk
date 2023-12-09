@@ -26,33 +26,7 @@ function OpenDecks() {
               </a>
             </p>
 
-            <img
-              src={Pic}
-              alt="music-all-night-open-deck-sessions-volks-nightclub"
-              className="m-3"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4} lg={3} className="m-3">
-            <img
-              src={Pic}
-              alt="music-all-night-open-deck-sessions-volks-nightclub"
-              className="m-3"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4} lg={3} className="m-3">
-            <img
-              src={Pic}
-              alt="music-all-night-open-deck-sessions-volks-nightclub"
-              className="m-3"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4} lg={3} className="m-3">
+
             <img
               src={Pic}
               alt="music-all-night-open-deck-sessions-volks-nightclub"
@@ -68,7 +42,7 @@ function OpenDecks() {
 export default OpenDecks
 
 export function Head() {
-  return <title> Open Decks Session | Volks Nightclub</title>
+  return <title> Open Decks Session | Spin Cycle</title>
 }
 
 export const pageQuery = graphql`
