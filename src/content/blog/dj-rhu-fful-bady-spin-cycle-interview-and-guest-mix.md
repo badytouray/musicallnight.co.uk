@@ -1,7 +1,7 @@
 ---
 name: First news blog
 intro: Music All Night Teams Up with Slack City - Empowering Emerging Artists through Spin Cycle
-image: ../../images/artists/rhu-int.png
+image: ../../images/artists/rhu-int.jpg
 featured: true
 date: When - 2023-01-01 18:00:00
 venue: Venue - The Volks Nightclub
@@ -59,3 +59,7 @@ exposure – an invaluable opportunity to share your music with a wider audience
 celebrate local talent, and immerse yourself in the captivating beats of the Slack City Spin Cycle.
 
 [Listen Now!](https://soundcloud.com/music-all-night/spin-rhu-fful-interview-and-guest-mix?si=c2619849e23b4814a6b0769073713a18&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+
+<a href="/blog">
+<button >Back to blog </Button>
+</a>

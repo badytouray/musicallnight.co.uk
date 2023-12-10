@@ -25,6 +25,8 @@ The venue for this event is none other than Brighton's legendary underground Vol
 venue has been the go-to spot for music lovers for years, and it's not hard to see why. The
 atmosphere is electric, open till 7am on the weekends and holds other amazing events such as the
 
-<a href="/open-decks">
-<button >Sign Up! </Button>
+[Watch Now!](https://www.youtube.com/@music_all_night)
+
+<a href="/blog">
+<button >Back to blog </Button>
 </a>
