@@ -1,7 +1,7 @@
 ---
 name: First news blog
 intro: Music All Night Teams Up with Slack City - Empowering Emerging Artists through Spin Cycle
-image: ../../images/artists/slack-show.jpg
+image: ../../images/artists/rhu-int.png
 featured: true
 date: When - 2023-01-01 18:00:00
 venue: Venue - The Volks Nightclub
@@ -48,16 +48,14 @@ DJ Bady invites you to submit your radio version music along with relevant links
 bady@musicallnight.co.uk. This is your chance to be part of the vibrant local music scene, gaining
 exposure and connecting with a broader audience through the powerful medium of radio.
 
-## Conclusion:
+## Conclusion
 
 The union of Music All Night and Slack City represents a significant leap forward for emerging
 artists in Brighton and beyond. The Spin Cycle show, with DJ Bady at the helm, promises an
 electrifying journey through the diverse soundscape of the local music scene. Don't miss out on the
-opportunity to discover new talent every Monday night at 7 pm, and if life gets in the way, catch up
+opportunity to discover new talent every Monday night at 7pm, and if life gets in the way, catch up
 on the Spin Cycle SoundCloud page. For aspiring artists, this collaboration opens doors to radio
 exposure – an invaluable opportunity to share your music with a wider audience. Join the movement,
 celebrate local talent, and immerse yourself in the captivating beats of the Slack City Spin Cycle.
 
-<a href="/blog">
-<button >Back to blog </Button>
-</a>
+[Listen Now!](https://soundcloud.com/music-all-night/spin-rhu-fful-interview-and-guest-mix?si=c2619849e23b4814a6b0769073713a18&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)

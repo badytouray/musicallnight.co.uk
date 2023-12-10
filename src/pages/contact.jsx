@@ -10,9 +10,11 @@ function Contact() {
       <Container className="m-3">
         <Row>
           <Col
-            lg={12}
+            sm={12}
+            md={3}
+            lg={4}
             className="m-3 justify-content-center"
-            style={{ width: 'auto', height: 'auto' }}
+            style={{ width: '640px', height: '640px' }}
           >
             <h1 className="text-center m-3">Contact us</h1>
 

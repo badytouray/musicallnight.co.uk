@@ -89,6 +89,7 @@ export const pageQuery = graphql`
             gatsbyImageData(width: 640)
           }
         }
+
         social {
           facebook
           instagram

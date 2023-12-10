@@ -14,7 +14,11 @@ function OpenDecks() {
           <Col lg={6} className="m-3" style={{ width: 'auto', height: 'auto' }}>
             <h1 className="text-center">Sign up TODAY</h1>
             <p className="text-center fs-3 m-3">
+<<<<<<< .merge_file_8lDnXw
               Attention all aspiring musicians! Get your music on radio, check our Youtube channel.
+=======
+              Attention aspiring musicians! Get your music on radio, check our Youtube channel.
+>>>>>>> .merge_file_3bv1N5
               <a
                 href="https://youtube.com/@music_all_night"
                 target="_blank"

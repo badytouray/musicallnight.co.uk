@@ -63,6 +63,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)
       }
     }
+
     allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/blog/*" } }) {
       edges {
         node {

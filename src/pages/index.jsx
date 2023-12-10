@@ -37,6 +37,16 @@ function IndexPage({ data }) {
               opportunities for upcoming South coast local talent.{' '}
             </p>
           </div>
+          <div>
+            <Row>
+              <NewsSection
+                image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
+                title="Latest blog"
+                // subtitle="celebrating the launch of our website"
+              />
+            </Row>
+          </div>
+
           <div className="text-center my-5">
             <h2>Featured events</h2>
 
@@ -54,15 +64,6 @@ function IndexPage({ data }) {
             </Row>
           </div>
 
-          <div>
-            <Row>
-              <NewsSection
-                image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
-                title="Latest blog"
-                // subtitle="celebrating the launch of our website"
-              />
-            </Row>
-          </div>
           <div>
             <Row>
               <ArtistSection

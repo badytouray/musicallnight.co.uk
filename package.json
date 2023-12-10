@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop -H 0.0.0.0",
-    "build": "gatsby build",
+    "build": "gatsby build && gh-pages -d public -b master",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx,json,md,yml,ts,tsx}\"",
@@ -34,6 +34,8 @@
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-remark": "^6.3.2",
     "gatsby-transformer-sharp": "^5.3.1",
+    "gh-pages": "^6.1.0",
+    "install": "^0.13.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
