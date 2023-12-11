@@ -10,9 +10,9 @@ function Contact() {
       <Container className="m-3">
         <Row>
           <Col
-            sm={12}
-            md={3}
-            lg={4}
+            sm={6}
+            md={4}
+            lg={12}
             className="m-3 justify-content-center"
             style={{ width: '640px', height: '640px' }}
           >
@@ -23,7 +23,7 @@ function Contact() {
             <img
               src={Pic}
               alt="contact-music-all-night"
-              style={{ height: 'auto', width: 'auto' }}
+              style={{ height: '500px', width: '500px' }}
               className="m-auto"
             />
           </Col>

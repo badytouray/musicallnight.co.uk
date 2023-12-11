@@ -11084,6 +11084,11 @@ ua-parser-js@^1.0.35:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.35.tgz#c4ef44343bc3db0a3cbefdf21822f1b1fc1ab011"
   integrity sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==
 
+ubuntu@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ubuntu/-/ubuntu-2.0.0.tgz#54837d5fab5dc728fb960ba86d872713483978f2"
+  integrity sha512-V2XGlHZubOrLDM6zj2BB8VoN2yX0PWHXeQH6NFp0TA/svM4O0TyY2HQu/u5IuCdT3Fb93FxakY1u9EoEMmu4qA==
+
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"

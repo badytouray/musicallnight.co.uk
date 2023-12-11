@@ -1,12 +1,7 @@
 ---
 name: Nicky Blackmarket & Ego Trippin
 intro: Boxing Day secial
-
-
 image: ../../images/artists/boxing-day.jpeg
-=======
-
-
 featured: true
 date: When - 2023-26-12 23:00:00
 venue: Venue - The Volks Nightclub

@@ -131,7 +131,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    news: file(relativePath: { eq: "artists/dj-bady.png" }) {
+    news: file(relativePath: { eq: "artists/banner-blog.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)

@@ -1,9 +1,7 @@
 ---
 name: 5 years of Spin Cycle
 intro: Party at the Actors pub, Brighton
-
 image: ../../images/artists/spin-cycle-event.jpeg
-
 featured: true
 date: When - 2023-01-01 18:00:00
 venue: Venue - The Actors Pub

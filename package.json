@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "man_gatsby",
+  "homepage": "https://badytouray.github.io/man_gatsby",
   "author": "badytouray",
   "keywords": [
     "gatsby"
@@ -11,10 +12,12 @@
     "develop": "gatsby develop",
     "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build && gh-pages -d public -b master",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx,json,md,yml,ts,tsx}\"",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx ./"
+    "lint": "eslint --ignore -path .gitignore --ext .js,.jsx,.ts,.tsx ./"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -40,7 +43,8 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "ubuntu": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
