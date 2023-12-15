@@ -55,7 +55,6 @@ function NewsPage({ data }) {
             )}
           </Col>
         </Row>
-
       </Container>
     </Layout>
   )
@@ -69,7 +68,6 @@ export function Head({ data }) {
 
 export const pageQuery = graphql`
   query NewsPage($id: String!) {
-
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

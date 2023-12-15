@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "man_gatsby",
-  "homepage": "https://badytouray.github.io/man_gatsby",
+  "homepage": "https://badytouray.github.io/www.musicallnight.co.uk/",
   "author": "badytouray",
   "keywords": [
     "gatsby"
@@ -43,6 +43,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-share": "^5.0.3",
     "sass": "^1.69.5",
     "ubuntu": "^2.0.0"
   },
