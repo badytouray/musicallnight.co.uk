@@ -2,7 +2,6 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/open-decks.png'
 
 function OpenDecks() {
   return (
@@ -25,12 +24,23 @@ function OpenDecks() {
                 (Watch now)
               </a>
             </p>
-
-            <img
-              src={Pic}
-              alt="music-all-night-open-deck-sessions-volks-nightclub"
-              className="m-3"
-              style={{ height: '700px', width: '700px' }}
+          </Col>
+          <Col lg={12} className="m-3">
+            <iframe
+              width="720"
+              height="560"
+              // src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
+              src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; 
+  autoplay; 
+  clipboard-write; 
+  encrypted-media; 
+  gyroscope; 
+  picture-in-picture; 
+  web-share"
+              allowfullscreen
             />
           </Col>
         </Row>
