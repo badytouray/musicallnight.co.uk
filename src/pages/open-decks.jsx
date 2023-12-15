@@ -27,7 +27,7 @@ function OpenDecks() {
           </Col>
           <Col lg={12} className="m-3">
             <iframe
-              width="720"
+              width="1080"
               height="560"
               // src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
               src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"

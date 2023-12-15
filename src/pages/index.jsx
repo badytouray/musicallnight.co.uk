@@ -137,7 +137,7 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
       }
     }
-    artist: file(relativePath: { eq: "artists/dj-bady.png" }) {
+    artist: file(relativePath: { eq: "artists/dj-banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)

@@ -6,7 +6,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/lock-it-up.jpg'
+import Pic from '../images/artists/man-logo.png'
 
 function AboutPage({ data }) {
   return (
@@ -89,7 +89,7 @@ function AboutPage({ data }) {
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
-                    <div className="card-body">
+                    {/* <div className="card-body">
                       <h5 className="card-title ">Bobbie Tee</h5>
                       <div>
                         <a
@@ -109,14 +109,14 @@ function AboutPage({ data }) {
                           <BsFacebook size="2em" />
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
-                    <div className="card-body">
+                    {/* <div className="card-body">
                       <h5 className="card-title ">Darren</h5>
                       <div>
                         <a
@@ -135,15 +135,15 @@ function AboutPage({ data }) {
                         >
                           <BsFacebook size="2em" />
                         </a>
-                      </div>
-                    </div>
+                      </div> 
+                    </div> */}
                   </div>
                 </div>
 
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
-                    <div className="card-body">
+                    {/* <div className="card-body">
                       <h5 className="card-title ">Bady</h5>
                       <div>
                         <a
@@ -163,7 +163,7 @@ function AboutPage({ data }) {
                           <BsFacebook size="2em" />
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

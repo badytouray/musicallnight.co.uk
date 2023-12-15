@@ -10,7 +10,6 @@ import { Layout } from '../components/Layout/Layout'
 function AllParts({ data }) {
   return (
     <Layout>
-
       <h1 className="text-center mt-5">Artists to watch 2023</h1>
 
       <Container className="mt-3 justify-content-around">
@@ -125,11 +124,11 @@ function AllParts({ data }) {
         </Row>
         {/* // 5TH SECTION */}
         <Row className=" mt-3 d-flex justify-content-evenly">
-          <Col lg="6">
+          {/* <Col lg="6">
             <GatsbyImage image={data.dan.childImageSharp.gatsbyImageData} />
           </Col>
           <Col lg="6">
-            <h3 className="mt-5 ">8D</h3>
+            <h3 className="mt-5 ">Psyclone</h3>
             <p className="mt-5">
               Hailing from Southern California, and now residing in Brighton, 8D comes correct with
               a multi-genre flex from DnB, Bass House, Disco, Breaks, and 140. With international DJ
@@ -148,7 +147,7 @@ function AllParts({ data }) {
             >
               <RiInstagramFill size="5em" /> @ 8D
             </a>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Layout>
