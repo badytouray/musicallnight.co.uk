@@ -6,7 +6,9 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/man-logo.png'
+import Pic from '../images/artists/nicky.png'
+import Ray from '../images/artists/ray.png'
+import Sec from '../images/artists/sec.png'
 
 function AboutPage({ data }) {
   return (
@@ -14,10 +16,10 @@ function AboutPage({ data }) {
       <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
       <Container>
         <Row>
-          <Col sm={6} md={6} lg={12}>
+          <Col sm={6} md={4} lg={6}>
             <h1 className="text-center pt-5">About Us</h1>
-            <div className="row align-items-end ">
-              <div className="col col-md-4  align-self-start ">
+            <div className="align-items-end ">
+              <div className="align-self-start ">
                 <img src={Pic} className=" m-10 card-img-top" alt="..." />
                 <div className="contact-info">
                   <span>
@@ -44,8 +46,8 @@ function AboutPage({ data }) {
                 </div>
               </div>
 
-              <Col>
-                <div className="col about-right align-self-end col-lg-8 p-5">
+              <Col sm={6} md={4} lg={6}>
+                <div className="about-right p-5">
                   <h5>Who are we?</h5>
                   <p>
                     Welcome to the Music Events Platform, created in 2021 to provide opportunities
@@ -55,27 +57,18 @@ function AboutPage({ data }) {
                     upcoming events and follow the rise of upcoming DJs and local Brighton MCs.
                   </p>
                   <br />
-                  <h5>Previous events</h5>
-                  <p>
-                    Previous events have included Drum and Bass King Harry Shotta, Garage Queen and
-                    So Solid Members Lisa Maffia and Romeo, DJ Pied Piper and more. We look forward
-                    to continuing to provide amazing events and opportunities for Brighton's local
-                    talent.
-                  </p>
-                  <br />
-                  <h5>Are you an Artist or DJ</h5>
+                  <h5>Get noticed</h5>
                   <p>
                     If you struggling to get yourself out there or you simplify do not know where to
                     turn or how to get started then look no further, we are always scouting fresh
-                    talent
+                    talent. Join our open decks night every Monday at the Actors pub in Brighton
                   </p>
                   <br />
-                  <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+                  <h5>Services</h5>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    Filming and photography and Artist development, promotion, markerting and
+                    Security. Contact us for more info
                   </p>
-                  {/* end of about decription */}
                 </div>
               </Col>
             </div>
@@ -83,12 +76,12 @@ function AboutPage({ data }) {
         </Row>
         {/* start of team images */}
         <Row>
-          <Col xs={12} sm={12} md={3} lg={12}>
+          <Col xs={12} sm={12} md={4} lg={12}>
             <div className="container text-center">
               <div className="row align-items-end">
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
-                    <img src={Pic} className="card-img-top" alt="..." />
+                    <img src={Ray} className="card-img-top" alt="..." />
                     {/* <div className="card-body">
                       <h5 className="card-title ">Bobbie Tee</h5>
                       <div>
@@ -142,7 +135,7 @@ function AboutPage({ data }) {
 
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
-                    <img src={Pic} className="card-img-top" alt="..." />
+                    <img src={Sec} className="card-img-top" alt="..." />
                     {/* <div className="card-body">
                       <h5 className="card-title ">Bady</h5>
                       <div>

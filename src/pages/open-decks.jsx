@@ -10,7 +10,7 @@ function OpenDecks() {
       // style={{ marginLeft: 'auto', marginRight: 'auto' }}
       >
         <Row>
-          <Col lg={12} className="m-3" style={{ width: 'auto', height: 'auto' }}>
+          <Col lg={2} className="m-3" style={{ width: 'auto', height: 'auto' }}>
             <h1 className="text-center">Sign up TODAY</h1>
             <p className="text-center fs-3 m-3">
               Attention aspiring musicians! Get your music on radio, check our Youtube channel.
@@ -25,7 +25,7 @@ function OpenDecks() {
               </a>
             </p>
           </Col>
-          <Col lg={12} className="m-3">
+          <Col lg={10} className="m-3">
             <iframe
               width="1080"
               height="560"

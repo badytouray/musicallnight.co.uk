@@ -1,7 +1,7 @@
 ---
 name: End of term party
 intro: Music All Night Dec event - End of term Uni party
-image: ../../images/artists/boxing-day.jpeg
+image: ../../images/artists/ukg-volks.png
 featured: true
 date: When - 2023-12-20 23:00:00
 venue: Venue - The Volks Nightclub
