@@ -8,18 +8,18 @@ import { NewsCard } from '../components/NewsCard'
 function NewsPage({ data }) {
   return (
     <Layout>
-      <HeroSection
-        image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-        // title="Future Awaits"
-        // subtitle="Read some stuff about some stuff"
-      >
-        {/* <Button as={Link} to="/contact" variant="primary" size="lg">
+      {/* <HeroSection
+        image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} */}
+      {/* // title="Future Awaits"
+        // subtitle="Read some stuff about some stuff" */}
+      {/* > */}
+      {/* <Button as={Link} to="/contact" variant="primary" size="lg">
           Read now
         </Button> */}
-        {/* <Button variant="primary" size="lg" onClick={console.log('hey')}>
+      {/* <Button variant="primary" size="lg" onClick={console.log('hey')}>
           WATCH TRAILER <i className="far fa-play-circle" />
-        </Button> */}
-      </HeroSection>
+        </Button> 
+      </HeroSection> */}
       <Container className="text-center mr-3 p-3 mb-3">
         <h1>Music All Night blog</h1>
         <Row>
@@ -56,7 +56,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query ArtistsPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/man_banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)

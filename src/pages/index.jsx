@@ -39,6 +39,26 @@ function IndexPage({ data }) {
           </div>
           <div>
             <Row>
+              <Col md={6} lg={12} className="m-3 mb-3">
+                <iframe
+                  width="1080"
+                  height="560"
+                  // src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
+                  src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; 
+                  autoplay; 
+                  clipboard-write; 
+                  encrypted-media; 
+                  gyroscope; 
+                  picture-in-picture; 
+                  web-share"
+                  allowfullscreen
+                />
+              </Col>
+            </Row>
+            <Row>
               <NewsSection
                 image={data.news.childImageSharp.gatsbyImageData.images.fallback.src}
                 title="Latest blog"

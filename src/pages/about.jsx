@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { BsFacebook, BsTelephoneInboundFill } from 'react-icons/bs'
 import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
-import { HeroSection } from '../components/HeroSection'
+// import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import Pic from '../images/artists/nicky.png'
 import Ray from '../images/artists/ray.png'
@@ -13,70 +13,60 @@ import Sec from '../images/artists/sec.png'
 function AboutPage({ data }) {
   return (
     <Layout>
-      <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} />
+      {/* <HeroSection image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src} /> */}
       <Container>
         <Row>
-          <Col sm={6} md={4} lg={6}>
+          <Col sm={12} md={4} lg={6}>
             <h1 className="text-center pt-5">About Us</h1>
-            <div className="align-items-end ">
-              <div className="align-self-start ">
-                <img src={Pic} className=" m-10 card-img-top" alt="..." />
-                <div className="contact-info">
-                  <span>
-                    <TfiEmail size="1.5em" color="" className="m-3" />
-                    <a
-                      href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <RiInstagramFill size="1.5em" color="instagram" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/results?search_query=gatsby+query"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="m-2 p-2"
-                    >
-                      <BsFacebook size="1.5em" />
-                    </a>
-                    <BsTelephoneInboundFill className="m-3 fs-4" />
-                    075 3378 0033
-                  </span>
-                </div>
-              </div>
-
-              <Col sm={6} md={4} lg={6}>
-                <div className="about-right p-5">
-                  <h5>Who are we?</h5>
-                  <p>
-                    Welcome to the Music Events Platform, created in 2021 to provide opportunities
-                    for upcoming South coast local talent. Our mission is to provide networking
-                    events with affordable tickets so everyone has access to the events. Our first
-                    event was held at the legendary Volks Nightclub in Brighton. We also promote
-                    upcoming events and follow the rise of upcoming DJs and local Brighton MCs.
-                  </p>
-                  <br />
-                  <h5>Get noticed</h5>
-                  <p>
-                    If you struggling to get yourself out there or you simplify do not know where to
-                    turn or how to get started then look no further, we are always scouting fresh
-                    talent. Join our open decks night every Monday at the Actors pub in Brighton
-                  </p>
-                  <br />
-                  <h5>Services</h5>
-                  <p>
-                    Filming and photography and Artist development, promotion, markerting and
-                    Security. Contact us for more info
-                  </p>
-                </div>
-              </Col>
+            <div className="contact-info">
+              <img src={Pic} className="m-10 card-img-top" alt="..." />
+              {/* <div className="contact-info"> */}
+              <span>
+                <TfiEmail size="1.5em" color="" className="m-3" />
+                <a
+                  href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="m-2 p-2"
+                >
+                  <RiInstagramFill size="1.5em" color="instagram" />
+                </a>
+                <a
+                  href="https://www.youtube.com/results?search_query=gatsby+query"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="m-2 p-2"
+                >
+                  <BsFacebook size="1.5em" />
+                </a>
+                <BsTelephoneInboundFill className="m-3 fs-4" />
+                075 3378 0033
+              </span>
             </div>
+          </Col>
+
+          <Col sm={12} md={4} lg={6} className="pt-5 fs-3">
+            <h5>Who are we?</h5>
+            <p>
+              Welcome to the Music Events Platform, created in 2021 to provide opportunities for
+              upcoming South coast local talent. Our mission is to provide networking events so
+              everyone has access to learn and grow. Our first event was held at the legendary Volks
+              Nightclub in Brighton. We also promote upcoming events and follow the rise of upcoming
+              DJs and local Brighton MCs.
+            </p>
+            <br />
+            <h5>Get noticed</h5>
+            <p>
+              Get yourself out there or you simplify do not know where to turn or how to get started
+              then look no further, we are always scouting fresh talent. Join our open decks night
+              every Monday at the Actors pub in Brighton
+            </p>
+            <br />
           </Col>
         </Row>
         {/* start of team images */}
         <Row>
-          <Col xs={12} sm={12} md={4} lg={12}>
+          <Col sm={12} md={4} lg={12}>
             <div className="container text-center">
               <div className="row align-items-end">
                 <div className="col col-md-4">
@@ -106,7 +96,7 @@ function AboutPage({ data }) {
                   </div>
                 </div>
 
-                <div className="col col-md-4">
+                <Col md={4}>
                   <div className="card " style={{ width: '100%' }}>
                     <img src={Pic} className="card-img-top" alt="..." />
                     {/* <div className="card-body">
@@ -131,7 +121,7 @@ function AboutPage({ data }) {
                       </div> 
                     </div> */}
                   </div>
-                </div>
+                </Col>
 
                 <div className="col col-md-4">
                   <div className="card " style={{ width: '100%' }}>
@@ -176,7 +166,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query AboutPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/man_banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(
