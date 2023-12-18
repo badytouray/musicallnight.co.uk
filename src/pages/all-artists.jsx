@@ -15,7 +15,7 @@ function AllParts({ data }) {
       <Container className="mt-3 justify-content-around">
         <Row>
           <Col lg="6">
-            <GatsbyImage image={data.bobbie.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={data.bosio.childImageSharp.gatsbyImageData} />
           </Col>
 
           <Col lg="6">
@@ -42,9 +42,9 @@ function AllParts({ data }) {
 
         {/* // 2ND SECTION */}
 
-        <Row className="mt-3 d-flex justify-content-evenly">
+        {/* <Row className="mt-3 d-flex justify-content-evenly">
           <Col lg="6">
-            <h3 className="mt-5">Zebberz</h3>
+            <h3 className="mt-5">Cozmos</h3>
             <p className="align-self-center mt-5">
               Our Bubbleologists can create bubble experiences from clouds of tiny bubbles to huge
               dragonesque bubbles and everything in between. Children and adults alike will be
@@ -63,15 +63,15 @@ function AllParts({ data }) {
             </a>
           </Col>
           <Col lg="6">
-            <GatsbyImage image={data.zebberz.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={data.cozmos.childImageSharp.gatsbyImageData} />
           </Col>
-        </Row>
+        </Row> */}
 
         {/* // 3RD SECTION */}
 
         <Row className=" mt-3 d-flex justify-content-evenly ">
           <Col lg="6">
-            <GatsbyImage image={data.mynx.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={data.beano.childImageSharp.gatsbyImageData} />
           </Col>
 
           <Col lg="6">
@@ -163,58 +163,22 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 540)
       }
     }
-    zebberz: file(relativePath: { eq: "artists/zebberz.png" }) {
+    beano: file(relativePath: { eq: "artists/beano.png" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }
     }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
+    cozmos: file(relativePath: { eq: "artists/cozmos.png" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }
     }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
+    bosio: file(relativePath: { eq: "artists/bosio.png" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }
     }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    artists: file(relativePath: { eq: "artists/dj-bady.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-
     dial: file(relativePath: { eq: "artists/Dial.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    mynx: file(relativePath: { eq: "artists/mynx.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 540)
-      }
-    }
-    dan: file(relativePath: { eq: "artists/8d.jpg" }) {
       childImageSharp {
         gatsbyImageData(width: 540)
       }
