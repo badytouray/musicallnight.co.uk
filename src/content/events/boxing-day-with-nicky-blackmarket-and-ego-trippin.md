@@ -6,16 +6,23 @@ featured: true
 date: When - 2023-26-12 23:00:00
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
-ticket: 'https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js'
 ---
 
 ## About
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ipsum pellentesque, suscipit
-ligula at, tristique dui. Curabitur aliquet dui ac lectus malesuada, sit amet tempus libero mollis.
+Music All Night wouldn’t be the same without The Volks Nightclub. The DnB ravers love them and for 1
+night only we are giving people the best of both worlds. DnB in the Main room and Hardcore in
+room 2.
 
-Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
-ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
+Let's celebrate Boxing day in style with the electrifying Drum and Bass Vs Hardcore event and make
+history.
 
-Mauris vitae mattis risus. Morbi ultricies justo velit, at pellentesque neque blandit sit amet. In
-ac sapien mauris. Nulla sed efficitur felis, sit amet eleifend nunc. Orci varius natoque penatibus
+## THE LINE UP
+
+Nicky Blackmarket - Ego Trippin’ - DJ Battle COMPETITION - Bobbie Tee b2b Mechanix /Zebberz - Beano
+w/MYNX - Subnet b2b MPB - SEBBE (Breaks FM) - Mr Chips - Dubsquatches - Psyclone b2b Vylan - Bosio -
+BSB and Theo
+
+Hosted by: Thunda Banton + COZMOS + Zebberz + Introspect7ve + MC Boa + IllEgo
+
+[Buy Tickets!](https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/MAN---500-Dj-BATTLE--Nicky-Blackmarket--Ego-Trippin/36674616/)

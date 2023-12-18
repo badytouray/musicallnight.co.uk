@@ -10,7 +10,7 @@ function EventsTemplate({ data }) {
 
   // const [showTickets, setShowTickets] = useState(false)
 
-  ;<script src="" />
+  // <script src="" />
 
   return (
     <Layout>
@@ -44,9 +44,9 @@ function EventsTemplate({ data }) {
                 Buy Tickets
               </Button>
             </div> */}
-            <Col className="m-3" xs={12} sm={12} md={6} lg={8}>
+            {/* <Col className="m-3" xs={12} sm={12} md={6} lg={8}>
               <TicketComponent />
-            </Col>
+            </Col> */}
 
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Col>

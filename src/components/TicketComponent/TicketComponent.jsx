@@ -16,10 +16,11 @@ export default function TicketComponent() {
           <Button
             size="lg"
             className="btn-danger"
-
-
-            onClick={() => showTicket('https://fixr.co/event/man-dial-tickets-995222867?')}
-
+            onClick={() =>
+              showTicket(
+                'https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/MAN---500-Dj-BATTLE--Nicky-Blackmarket--Ego-Trippin/36674616/'
+              )
+            }
           >
             Buy Now
           </Button>

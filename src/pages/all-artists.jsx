@@ -10,7 +10,7 @@ import { Layout } from '../components/Layout/Layout'
 function AllParts({ data }) {
   return (
     <Layout>
-      <h1 className="text-center mt-5">Artists to watch 2023</h1>
+      <h1 className="text-center mt-5">Artists to watch 2024</h1>
 
       <Container className="mt-3 justify-content-around">
         <Row>
@@ -19,17 +19,10 @@ function AllParts({ data }) {
           </Col>
 
           <Col lg="6">
-            <h3 className="mt-5">Bobbie Tee</h3>
-            <p className="align-self-center mt-5">
-              Our fantastic Aerialists know how to mesmerize their audience. From a hoop, silks or
-              trapeze, our aerial acrobats put on a show that will have the audience look in
-              amazement as our performers dance through the air. We are able to tailor our
-              performances to the specific mood of your event, and if you are planning your event
-              outside or in an area with no rigging, we are able to supply free-standing rigs of
-              lyra lollipops.
-            </p>
+            <h3 className="mt-5">Bosio</h3>
+            <p className="align-self-center mt-5">Follow on Instagram and and enjoy the journey</p>
             <a
-              href="https://instagram.com/bobbieteeuk"
+              href="https://www.instagram.com/bosio.dnb"
               target="_blank"
               rel="noreferrer"
               className="m-2 p-2"
@@ -39,74 +32,50 @@ function AllParts({ data }) {
             </a>
           </Col>
         </Row>
-
         {/* // 2ND SECTION */}
-
-        {/* <Row className="mt-3 d-flex justify-content-evenly">
+        <Row className="mt-3 d-flex justify-content-evenly">
           <Col lg="6">
             <h3 className="mt-5">Cozmos</h3>
-            <p className="align-self-center mt-5">
-              Our Bubbleologists can create bubble experiences from clouds of tiny bubbles to huge
-              dragonesque bubbles and everything in between. Children and adults alike will be
-              amazed by the entertainment provided by our Bubbleology performers. They are the
-              perfect addition to any family event and we can even make the experience interactive
-              and get little ones involved in making their own bubbly creations.
-            </p>
+            <p className="align-self-center mt-5">Follow on Instagram and and enjoy the journey</p>
             <a
-              href="https://www.instagram.com/zebberz"
+              href="https://www.instagram.com/cozmosdnb"
               target="_blank"
               rel="noreferrer"
               className="m-2 p-2"
               style={{ color: 'inherit', textDecoration: 'inherit' }}
             >
-              <RiInstagramFill size="5em" /> @ ZEBBERZ
+              <RiInstagramFill size="5em" /> @ COZMOS
             </a>
           </Col>
           <Col lg="6">
             <GatsbyImage image={data.cozmos.childImageSharp.gatsbyImageData} />
           </Col>
-        </Row> */}
-
+        </Row>
         {/* // 3RD SECTION */}
-
         <Row className=" mt-3 d-flex justify-content-evenly ">
           <Col lg="6">
             <GatsbyImage image={data.beano.childImageSharp.gatsbyImageData} />
           </Col>
 
           <Col lg="6">
-            <h3 className="mt-5">Mynx</h3>
-            <p className="mt-5">
-              As light technology advances, so does the entertainment provided by our LED Dancers.
-              Wowing audiences with their stunning dance moves enhanced by an awe-inspiring visual
-              display provided by the LED lights. It is truly a spectacle to behold. Our
-              professional dancers are able to dress to perfectly complement your event and ensure
-              that the audience knows that yours is the best party in town!
-            </p>
+            <h3 className="mt-5">Beano</h3>
+            <p className="align-self-center mt-5">Follow on Instagram and and enjoy the journey</p>
             <a
-              href="https://www.instagram.com/mynx.uk"
+              href="https://www.instagram.com/beanodnb"
               target="_blank"
               rel="noreferrer"
               className="m-2 p-2"
               style={{ color: 'inherit', textDecoration: 'inherit' }}
             >
-              <RiInstagramFill size="5em" /> @ MYNX.UK
+              <RiInstagramFill size="5em" /> @ BEANODNB
             </a>
           </Col>
         </Row>
-
         {/* // 4TH SECTION */}
-
         <Row className=" mt-3 d-flex justify-content-evenly">
           <Col lg="6">
             <h3 className="mt-5 ">Dial</h3>
-            <p className="mt-5">
-              Dail started off 6 years ago messing around getting ideas for “cool drops” but then
-              decided he wanted to take producing seriously. Starting off with making EDM then
-              decided to make Drum and Bass as it has always been in his heart and wanted to make
-              the music that he loves. He has been played on Radio 1, Been at the top of the Hypedit
-              DNB chart 3 times and has managed to rack in over 700k plays over all platforms.
-            </p>
+            <p className="align-self-center mt-5">Follow on Instagram and and enjoy the journey</p>
             <a
               href="https://www.instagram.com/dialdnbuk"
               target="_blank"
