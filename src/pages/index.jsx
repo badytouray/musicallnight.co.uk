@@ -33,8 +33,8 @@ function IndexPage({ data }) {
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
             <h3 className="lead">
-              Welcome to the Music All Night Events Platform, created in 2021 to provide
-              opportunities for upcoming South coast local talent.{' '}
+              Welcome to the Music All Night, providing opportunities for upcoming South coast local
+              talent.{' '}
             </h3>
           </div>
           <div>
@@ -42,7 +42,7 @@ function IndexPage({ data }) {
               <Col md={6} lg={6}>
                 <iframe
                   width="100%"
-                  height="auto"
+                  height="320"
                   src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
                   title="YouTube video player"
                   frameBorder="0"

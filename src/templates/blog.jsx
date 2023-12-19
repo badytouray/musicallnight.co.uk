@@ -59,7 +59,6 @@ export const pageQuery = graphql`
       frontmatter {
         name
         intro
-        videoSrcURL
         image {
           childImageSharp {
             gatsbyImageData(width: 640)
