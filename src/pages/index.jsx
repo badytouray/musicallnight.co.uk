@@ -32,17 +32,17 @@ function IndexPage({ data }) {
         <Container fluid>
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
-            <p className="lead">
+            <h3 className="lead">
               Welcome to the Music All Night Events Platform, created in 2021 to provide
               opportunities for upcoming South coast local talent.{' '}
-            </p>
+            </h3>
           </div>
           <div>
-            <Row>
-              <Col md={6} lg={12} className="m-3 mr-3 object-fit-cover ">
+            <Row className="m-3">
+              <Col md={6} lg={6}>
                 <iframe
-                  width="720"
-                  height="560"
+                  width="100%"
+                  height="auto"
                   src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
                   title="YouTube video player"
                   frameBorder="0"
@@ -55,6 +55,13 @@ function IndexPage({ data }) {
                   web-share"
                   allowfullscreen
                 />
+              </Col>
+              <Col md={6} lg={6} className="p-5 ">
+                <h4>
+                  {' '}
+                  Music All Night Youtube channel where you can all the events and radio interivews
+                  plus more.
+                </h4>
               </Col>
             </Row>
             <Row>

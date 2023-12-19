@@ -10,54 +10,54 @@ videoSrcURL: 'https://www.youtube.com/@freecodecamp/videos'
 ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
 ---
 
-## What is Slack city?
+## Dad but Delicious
 
-In an exciting collaboration that promises to be a game-changer for emerging local artists, Music
-All Night has joined forces with Brighton's renowned radio station, Slack City. Together, they are
-set to amplify the voices of talented musicians through the much-anticipated Spin Cycle weekly show,
-hosted by the dynamic DJ Bady. With a mission to celebrate and provide opportunities for
-up-and-coming artists, this partnership marks a significant step towards creating a vibrant platform
-for the local music scene.
+In the latest episode of the Slack City Spin Cycle Open Decks show, the airwaves were graced by the
+presence of the incredibly talented DJ Rhu Fful hailing from Kent. With a unique background as half
+Scottish and half mysterious, Rhu Fful sat down for a captivating interview, sharing insights into
+his DJ journey, the origin of his intriguing stage name, and exciting plans for 2024.
 
-## The Spin Cycle Show:
+## Technical Hiccups and Rescues:
 
-Every Monday night from 7 pm to 10 pm, music enthusiasts can tune in to the Slack City Spin Cycle
-show, now hosted by the talented DJ Bady. The show is dedicated to showcasing the skills and
-creativity of emerging local artists, offering a diverse mix of genres and styles. Whether you're a
-fan of indie, electronic, hip-hop, or any other genre, Spin Cycle promises to be a musical journey
-that captivates and inspires.
+As Bady, the host, navigates the world of radio presenting, the interview faced a few technical
+challenges at the beginning. However, the resilient Joe stepped in to save the day, ensuring a
+smooth and enjoyable experience for the audience. The team extends their apologies for the slow
+start but promises an engaging conversation ahead.
 
-## DJ Bady Takes the Helm
+## The Birth of "Dad but Delicious":
 
-A new era begins as DJ Bady steps into the role of the Spin Cycle show host. Known for his eclectic
-taste and infectious energy, DJ Bady is set to curate an engaging playlist that reflects the
-richness of the local music scene. His passion for music and commitment to supporting emerging
-talents make him the perfect guide for this musical adventure.
+One of the intriguing topics explored during the interview was the story behind DJ Rhu Fful's
+distinctive beard style, which he humorously refers to as "Dad but Delicious." Listeners were
+treated to the amusing anecdote of how this quirky moniker came to be and why it perfectly
+encapsulates his personality.
 
-## Catch Up Anytime, Anywhere
+Family and Fun: Promo Videos in the Park: The DJ lifted the curtain on his personal life, sharing
+how he incorporates his family, particularly his son, into the creative process. Listeners
+discovered the motivation behind his unique promo videos filmed in the park, offering a charming
+blend of music and family fun. Rhu Fful explained why he enjoys creating comedic videos, providing a
+delightful peek into the man behind the DJ booth.
 
-Life can get busy, and missing out on a Monday night Spin Cycle show is inevitable. Fret not – Music
-All Night and Spin Cycle have made it easy for you to catch up on the latest tunes. Simply head over
-to the Spin Cycle or Music All Night SoundCloud page, where you can conveniently download any missed
-episodes. This ensures that the beats and melodies of emerging artists are accessible to you at your
-convenience.
+One of the more humorous segments of the interview revolved around Rhu Fful's unique approach to
+filming festival experiences, specifically focusing on people's hips. The DJ shared the entertaining
+story behind this unconventional choice, revealing the unexpected hilarity that often ensues during
+live events.
 
-## Opportunities for Artists
+"Envy": A Sneak Peek into the Future: During the interview, Rhu Fful treated the audience to a sneak
+peek of his upcoming release titled "Envy." The track was seamlessly integrated into his mix, giving
+listeners a taste of the innovative sounds that will define his musical journey in the coming
+months.
 
-If you're an aspiring artist eager to have your music heard on the radio, the doors are wide open.
-DJ Bady invites you to submit your radio version music along with relevant links to
-bady@musicallnight.co.uk. This is your chance to be part of the vibrant local music scene, gaining
-exposure and connecting with a broader audience through the powerful medium of radio.
+Charismatic Energy at Volks: DJ Rhu Fful has graced showcasing and networking events at Volks,
+leaving an indelible mark with his charismatic energy. The interview highlighted his talent for
+seamlessly blending and selecting music, leaving listeners eager to witness more of his performances
+in the future.
 
 ## Conclusion
 
-The union of Music All Night and Slack City represents a significant leap forward for emerging
-artists in Brighton and beyond. The Spin Cycle show, with DJ Bady at the helm, promises an
-electrifying journey through the diverse soundscape of the local music scene. Don't miss out on the
-opportunity to discover new talent every Monday night at 7pm, and if life gets in the way, catch up
-on the Spin Cycle SoundCloud page. For aspiring artists, this collaboration opens doors to radio
-exposure – an invaluable opportunity to share your music with a wider audience. Join the movement,
-celebrate local talent, and immerse yourself in the captivating beats of the Slack City Spin Cycle.
+DJ Rhu Fful was a delightful journey into the world of beats and humour. Listeners got an intimate
+look at the man behind the music, his creative process, and the exciting projects on the horizon. As
+Slack City continues to showcase diverse talents, DJ Rhu Fful's magnetic personality and musical
+prowess stand out, promising an exciting year ahead in 2024.
 
 [Listen Now!](https://soundcloud.com/music-all-night/spin-rhu-fful-interview-and-guest-mix?si=c2619849e23b4814a6b0769073713a18&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 

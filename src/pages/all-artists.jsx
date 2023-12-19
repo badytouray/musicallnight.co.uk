@@ -28,7 +28,7 @@ function AllParts({ data }) {
               className="m-2 p-2"
               style={{ color: 'inherit', textDecoration: 'inherit' }}
             >
-              <RiInstagramFill size="5em" /> @ BOBBIETEEUK
+              <RiInstagramFill size="5em" /> @ BOSIO.DNB
             </a>
           </Col>
         </Row>

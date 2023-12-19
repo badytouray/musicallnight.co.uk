@@ -7,27 +7,18 @@ import Pic from '../images/artists/dj-bady.png'
 function Contact() {
   return (
     <Layout>
-      <Container className="m-3">
+      <Container>
         <Row>
-          <Col
-            sm={6}
-            md={4}
-            lg={12}
-            className="m-3 justify-content-center"
-            style={{ width: '640px', height: '640px' }}
-          >
-            <h1 className="text-center m-3">Contact us</h1>
-
-            <p className="text-center fs-3 m-3">Contact us at bady@musicallnight.co.uk</p>
+          <Col sm={6} md={4} lg={12}>
+            <h1 className="text-center">Contact us</h1>
+            <p className="text-center fs-3 ">Contact us at bady@musicallnight.co.uk</p>
 
             <img
               src={Pic}
               alt="contact-music-all-night"
-              style={{ height: '500px', width: '500px' }}
-              className="m-auto"
+              style={{ height: 'auto', width: '100%' }}
             />
           </Col>
-          {/* </Card> */}
         </Row>
       </Container>
     </Layout>

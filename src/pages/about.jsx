@@ -6,9 +6,10 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
 // import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
+import Sec from '../images/artists/beano.png'
+import Maddy from '../images/artists/maddy.png'
 import Pic from '../images/artists/nicky.png'
 import Ray from '../images/artists/ray.png'
-import Sec from '../images/artists/sec.png'
 
 function AboutPage({ data }) {
   return (
@@ -23,16 +24,11 @@ function AboutPage({ data }) {
               {/* <div className="contact-info"> */}
               <span>
                 <TfiEmail size="1.5em" color="" className="m-3" />
-                <a
-                  href="https://www.instagram.com/music__all__night/?__coig_restricted=1"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="m-2 p-2"
-                >
+                <a href="/contact" target="_blank" rel="noreferrer" className="m-2 p-2">
                   <RiInstagramFill size="1.5em" color="instagram" />
                 </a>
                 <a
-                  href="https://www.youtube.com/results?search_query=gatsby+query"
+                  href="https://www.youtube.com/@music_all_night"
                   target="_blank"
                   rel="noreferrer"
                   className="m-2 p-2"
@@ -45,7 +41,7 @@ function AboutPage({ data }) {
             </div>
           </Col>
 
-          <Col sm={12} md={4} lg={6} className="pt-5 fs-3">
+          <Col sm={12} md={4} lg={6} className="pt-5 fs-5">
             <h5>Who are we?</h5>
             <p>
               Welcome to the Music Events Platform, created in 2021 to provide opportunities for
@@ -98,7 +94,7 @@ function AboutPage({ data }) {
 
                 <Col md={4}>
                   <div className="card " style={{ width: '100%' }}>
-                    <img src={Pic} className="card-img-top" alt="..." />
+                    <img src={Maddy} className="card-img-top" alt="..." />
                     {/* <div className="card-body">
                       <h5 className="card-title ">Darren</h5>
                       <div>

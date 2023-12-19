@@ -25,21 +25,20 @@ function OpenDecks() {
               </a>
             </p>
           </Col>
-          <Col lg={10} className="m-3">
+          <Col lg={12}>
             <iframe
-              width="1080"
-              height="560"
-              // src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
+              width="100%"
+              height="auto"
               src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; 
-  autoplay; 
-  clipboard-write; 
-  encrypted-media; 
-  gyroscope; 
-  picture-in-picture; 
-  web-share"
+              autoplay; 
+              clipboard-write; 
+              encrypted-media; 
+              gyroscope; 
+              picture-in-picture; 
+              web-share"
               allowfullscreen
             />
           </Col>
