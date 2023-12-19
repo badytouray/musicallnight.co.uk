@@ -1,6 +1,8 @@
 ---
-name: First news blog
-intro: Music All Night Teams Up with Slack City - Empowering Emerging Artists through Spin Cycle
+name: Rhu Fful Slack city radio interview
+intro:
+  In the latest episode of the Slack City Spin Cycle Open Decks show, the airwaves were graced by Dj
+  RHu Fful
 image: ../../images/artists/rhu-int.jpg
 featured: true
 date: When - 2023-01-01 18:00:00

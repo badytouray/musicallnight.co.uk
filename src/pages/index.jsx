@@ -32,10 +32,7 @@ function IndexPage({ data }) {
         <Container fluid>
           <div className="text-center my-5">
             <h1>Welcome to M.A.N</h1>
-            <h3 className="lead">
-              Welcome to the Music All Night, providing opportunities for upcoming South coast local
-              talent.{' '}
-            </h3>
+            <h3 className="lead">We provide opportunities for upcoming South coast talent. </h3>
           </div>
           <div>
             <Row className="m-3">
@@ -57,11 +54,7 @@ function IndexPage({ data }) {
                 />
               </Col>
               <Col md={6} lg={6} className="p-5 ">
-                <h4>
-                  {' '}
-                  Music All Night Youtube channel where you can all the events and radio interivews
-                  plus more.
-                </h4>
+                <h4> Showcasing the newest talents.</h4>
               </Col>
             </Row>
             <Row>

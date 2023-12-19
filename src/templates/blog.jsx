@@ -21,7 +21,7 @@ function NewsPage({ data }) {
     <Layout>
       <Container className="mr-3 p-3 ">
         <Row>
-          <Col className=" pt-5" sm={12} md={4} lg={4}>
+          <Col className=" pt-5" sm={12} md={4} lg={6}>
             {/* <h1>{frontmatter?.name}</h1> */}
             <GatsbyImage
               image={frontmatter.image?.childImageSharp?.gatsbyImageData}
@@ -29,13 +29,13 @@ function NewsPage({ data }) {
               style={{ borderStyle: 'groove', borderRadius: '5px' }}
             />
           </Col>
-          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={2} lg={2}>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={2} lg={6}>
             <p>{frontmatter?.intro}</p>
             <p>{frontmatter?.date}</p>
             <p>{frontmatter?.venue}</p>
             <p>{frontmatter?.location}</p>
           </Col>
-          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={6}>
+          <Col className="fs-5 pt-5" style={{ borderRadius: '5px' }} xs={12} sm={12} md={6} lg={12}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Col>
         </Row>

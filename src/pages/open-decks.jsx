@@ -28,7 +28,7 @@ function OpenDecks() {
           <Col lg={12}>
             <iframe
               width="100%"
-              height="auto"
+              height="560"
               src="https://www.youtube.com/embed/LggQulkjHi0?si=asHS8-WYrqKOoTKr"
               title="YouTube video player"
               frameBorder="0"

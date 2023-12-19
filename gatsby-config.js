@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `MAN_Gatsby`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.musicallnight.co.uk`,
   },
   plugins: [
     'gatsby-plugin-sass',

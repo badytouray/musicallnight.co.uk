@@ -58,6 +58,8 @@ on the Spin Cycle SoundCloud page. For aspiring artists, this collaboration open
 exposure – an invaluable opportunity to share your music with a wider audience. Join the movement,
 celebrate local talent, and immerse yourself in the captivating beats of the Slack City Spin Cycle.
 
+[Watch on Youtube!](https://youtube.com/@music_all_night?si=KQoiSNoGiEnZzew7)
+
 <a href="/blog">
 <button >Back to blog </Button>
 </a>
