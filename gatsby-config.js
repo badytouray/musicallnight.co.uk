@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/pic2.png',
+        icon: 'src/images/man-icon.png',
       },
     },
     'gatsby-plugin-sharp',

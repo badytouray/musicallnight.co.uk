@@ -2,7 +2,7 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/dj-bady.png'
+import Pic from '../images/artists/man-logo.png'
 
 function Contact() {
   return (
