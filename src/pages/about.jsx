@@ -7,7 +7,7 @@ import { TfiEmail } from 'react-icons/tfi'
 // import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 import Sec from '../images/artists/beano.png'
-import Maddy from '../images/artists/maddy.png'
+import Ego from '../images/artists/ego.png'
 import Pic from '../images/artists/nicky.png'
 import Ray from '../images/artists/ray.png'
 
@@ -94,7 +94,7 @@ function AboutPage({ data }) {
 
                 <Col md={4}>
                   <div className="card " style={{ width: '100%' }}>
-                    <img src={Maddy} className="card-img-top" alt="..." />
+                    <img src={Ego} className="card-img-top" alt="..." />
                     {/* <div className="card-body">
                       <h5 className="card-title ">Darren</h5>
                       <div>
