@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `MAN_Gatsby`,
+    title: `Music ALl Night`,
     siteUrl: `https://www.musicallnight.co.uk`,
   },
   plugins: [
@@ -17,6 +17,7 @@ module.exports = {
         icon: 'src/images/man-icon.png',
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
