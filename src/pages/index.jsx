@@ -14,8 +14,7 @@ function IndexPage({ data }) {
       <>
         <HeroSection
           image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-
-          // title="Future Awaits"
+          title="Music All Night"
           // subtitle="What are you waiting for?"
         >
           {/* <Button as={Link} to="/contact" variant="primary" size="lg">
