@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { ArtistSection } from '../components/ArtistSection'
@@ -14,7 +14,7 @@ function IndexPage({ data }) {
       <>
         <HeroSection
           image={data.heroImage.childImageSharp.gatsbyImageData.images.fallback.src}
-          title="Music All Night"
+          // title="Music All Night"
           // subtitle="What are you waiting for?"
         >
           {/* <Button as={Link} to="/contact" variant="primary" size="lg">
