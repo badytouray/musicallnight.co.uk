@@ -1,10 +1,12 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 // import { ArtistCard } from '../components/ArtistCard'
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
 // import Fixr from '../components/Fixr/Fixr'
+import { Button, Col, Container, Row } from 'react-bootstrap'
+import { ArtistCard } from '../components/ArtistCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 // import { NewsCard } from '../components/NewsCard'
@@ -149,7 +151,7 @@ export const pageQuery = graphql`
             intro
             image {
               childImageSharp {
-                gatsbyImageData(width: 540)
+                gatsbyImageData(width: 540, height: 540)
               }
             }
           }

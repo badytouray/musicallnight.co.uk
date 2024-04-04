@@ -1,7 +1,7 @@
 ---
 name: DJ Bobbie Tee
 intro: Bla bla bla.
-image: ../../images/artists/dj-bady.png
+image: ../../images/artists/model1.jpeg
 featured: true
 social:
   facebook: https://facebook.com/test
