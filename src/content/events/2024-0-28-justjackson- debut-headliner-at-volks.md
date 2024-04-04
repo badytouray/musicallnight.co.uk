@@ -1,15 +1,15 @@
 ---
-name: Bady at Volks
-intro: Who is Dail?
-image: ../../images/artists/Dial.png
+name: Justjackson debut Headline set
+intro: JustJackson + STYLEONE
+image: ../../images/artists/jacksonflyer.jpeg
 featured: true
-date: When - 2023-06-04 23:00:00
+date: When - 2024-04-28 22:00:00
 venue: Venue - The Volks Nightclub
 location: Location - Brighton
 ticket: Ticket link - 'https://www.youtube.com/@freecodecamp/videos'
 ---
 
-### How it all started
+### Join the celebration
 
 People from various backgrounds may come together via music since it is a universal language. After
 six years of hard effort, Dial, who has dedicated his life to his craft, will finally perform his
@@ -20,7 +20,7 @@ The adventure of Dial began six years ago, when he initially experimented with c
 drops." He soon came to the conclusion that producing was more than just a hobby and chose to pursue
 it. He began with EDM and experimented with several genres before settling on drum and bass.
 
-### The expansion
+### What to expect
 
 Even if they succeed in doing so, most DJs find it difficult to support themselves with their gifted
 abilities. Dial has established a name for himself in the Drum and Bass music industry despite the
@@ -34,26 +34,26 @@ be the best version of himself. We have witnessed his artistic growth and develo
 tremendously proud of all that he has accomplished. It has been a privilege to watch him blossom and
 take the stage as a headliner.
 
-### The ideal location
+### Also on the line up
 
-The Volks nightclub is the ideal location for Dial's debut headlining performance. It's a legendary
-club that has long led Brighton's Drum and Bass music scene, making it the ideal setting to display
-Dial's distinctive sound. The crowd is always up for a huge rave while pulling the iconic bass face,
-the atmosphere is electrifying, and the sound system, RC1, is unmatched. It's the ideal setting for
-Dial to make his mark and demonstrate his talent to the world.
+- 9T4 b2b Swayley
+- Psyclone w/INTROSPECT7VE
+- Bakez b2b Primxl w/Zebberz
+- Bobbie Tee b2b Mechanix
+- Justjackson w/StyleOne
+- Beka B2B Dreadnaught w/Drummo
+- GUI b2b Rishi w/COZMOS
 
-Dial's upcoming headline performance has us giddy with anticipation, and we have no doubt that he
-will astound the audience. He's not the only performer that night, either. Some of Brighton's most
-brilliant up-and-coming DJs will provide backing for him. These up-and-coming musicians are the
-scene's future, therefore we're delighted to be giving them the chance to perform with Dial.
+Hosted by: StyleOne, Drummo, Bady, Zebberz, INTROSPECT7VE, COZMOS
 
-Dial's headlining show at Music All Night is the ideal illustration of how music can bring people
-together. To honour the impact of music, we're bringing together aspiring musicians, devoted
-listeners, and music enthusiasts from all backgrounds. We are honoured to be a part of this night
-because it is one not to be missed.
+### Liquid lunch room 2 TAKEOVER
 
-### The conclusion
+Before we get super hyped about the night time event with Justjackson which starts 10pm, our friends
+Liquid lunch are hosting a day time Drum and bass seaside rave at the Volks nighclub. Everything
+kicks off at 4pm until 9:30pm outside of Volks, come and hang out with the dnb gang as they deliver
+sunday service. Then at 10pm we open the doors for a Music All Night & Liquid lunch Sunday after
+party. Grab your tickets from FIXR or Skiddle.
 
-To sum up, Dial's journey to his debut headlining performance in Brighton's Volks nightclub has been
-one of love, devotion, and hard work. We hope to see you there as we commemorate this significant
-occasion. Let's unite and acknowledge the influence of music.
+<a href="/events">
+<button >Back to events</Button>
+</a>

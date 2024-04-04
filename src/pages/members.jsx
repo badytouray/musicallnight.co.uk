@@ -2,15 +2,21 @@ import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 // import Fade from 'react-reveal/Fade';
-import { Col, Row } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import { RiInstagramFill } from 'react-icons/ri'
 import { Layout } from '../components/Layout/Layout'
 
-function AllParts({ data }) {
+function Members({ data }) {
   return (
     <Layout>
-      <h1 className="text-center mt-5 ">Artists to watch 2023</h1>
+      <h1 className="text-center mt-5">Join the membership and build your network</h1>
+      <p className="text-center ml-3">
+        Join TODAY!
+        <Button href="https://www.facebook.com" className="m-3" type="button">
+          Click here
+        </Button>
+      </p>
 
       <Container className="mt-3 justify-content-around">
         <Row>
@@ -151,7 +157,7 @@ function AllParts({ data }) {
   )
 }
 
-export default AllParts
+export default Members
 
 export const pageQuery = graphql`
   query Services {

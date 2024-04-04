@@ -1,7 +1,7 @@
 ---
 name: Dail's first Headline set at Volks
 intro: Who is Dail?
-image: ../../images/artists/Dial.png
+image: ../../images/artists/justjackson.png
 featured: true
 date: When - 2023-06-04 23:00:00
 venue: Venue - The Volks Nightclub

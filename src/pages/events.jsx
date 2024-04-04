@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { EventCard } from '../components/EventCard'
 import { Layout } from '../components/Layout'
@@ -25,7 +25,7 @@ function EventsPage({ data }) {
               />
             </Col>
           ))}
-          <Col>
+          {/* <Col>
             <div>
               <Button
                 src="https://web-cdn.fixr.co/scripts/fixr-checkout-widget.v1.min.js"
@@ -34,7 +34,7 @@ function EventsPage({ data }) {
                 View shop{' '}
               </Button>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Layout>
