@@ -6,7 +6,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { TfiEmail } from 'react-icons/tfi'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
-import Pic from '../images/artists/lock-it-up.jpg'
+import Pic from '../images/artists/jacksonpic.jpg'
 
 function AboutPage({ data }) {
   return (
@@ -182,7 +182,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query AboutPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(

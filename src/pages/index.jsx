@@ -5,8 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { ArtistSection } from '../components/ArtistSection'
 import { EventCard } from '../components/EventCard'
 // import Fixr from '../components/Fixr/Fixr'
-import { Button, Col, Container, Row } from 'react-bootstrap'
-import { ArtistCard } from '../components/ArtistCard'
+// import { ArtistCard } from '../components/ArtistCard'
 import { HeroSection } from '../components/HeroSection'
 import { Layout } from '../components/Layout'
 // import { NewsCard } from '../components/NewsCard'
@@ -115,7 +114,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query IndexPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(
@@ -126,7 +125,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    news: file(relativePath: { eq: "artists/harry.png" }) {
+    news: file(relativePath: { eq: "artists/blog.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 1080, layout: CONSTRAINED)
