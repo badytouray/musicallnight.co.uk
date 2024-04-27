@@ -36,7 +36,7 @@ export function Head() {
 
 export const pageQuery = graphql`
   query BlogPage {
-    heroImage: file(relativePath: { eq: "artists/harry.png" }) {
+    heroImage: file(relativePath: { eq: "artists/blog-banner.png" }) {
       relativePath
       childImageSharp {
         gatsbyImageData(width: 1920, height: 400, layout: CONSTRAINED)

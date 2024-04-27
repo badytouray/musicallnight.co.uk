@@ -68,12 +68,7 @@ function AboutPage({ data }) {
                     turn or how to get started then look no further, we are always scouting fresh
                     talent
                   </p>
-                  <br />
-                  <h5>Lorem Ipsum is simply dummy text of the printing</h5>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s.
-                  </p>
+
                   {/* end of about decription */}
                 </div>
               </Col>

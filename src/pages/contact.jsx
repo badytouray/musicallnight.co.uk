@@ -15,7 +15,7 @@ function Contact() {
             style={{ width: 'auto', height: 'auto' }}
           >
             <h1 className="text-center m-3">Contact us</h1>
-            <p className="text-center fs-3 m-3">Contact us at musicallnight365@gmail.com</p>
+            <p className="text-center fs-3 m-3">Contact us at bady@musicallnight.co.uk</p>
             <img
               src={Pic}
               alt="contact-music-all-night"
